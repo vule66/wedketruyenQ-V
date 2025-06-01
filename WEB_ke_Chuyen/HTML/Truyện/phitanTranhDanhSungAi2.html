@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đọc Truyện - WebketruyenQ&V</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../../CSS/trangchu.css">
+  <link rel="stylesheet" href="../../CSS/read.css">
+</head>
+
+<body>
+  <div class="main-content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand ms-3" href="../Trangchu.html">WebketruyenQ&V</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto ms-3">
+          <li class="nav-item">
+            <a class="nav-link" href="../Trangchu.html">Trang chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Truyện mới.html">Truyện Mới</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownTheLoai" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Thể Loại
+            </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownTheLoai">
+              <a class="dropdown-item" href="../Truyện ma.html">Truyện Ma</a>
+              <a class="dropdown-item" href="../Truyện cổ tích.html">Cổ Tích</a>
+              <a class="dropdown-item" href="../Truyện cười.html">Truyện Cười</a>
+              <a class="dropdown-item" href="../Truyện ngôn tình.html">Truyện Ngôn Tình</a>
+              <a class="dropdown-item" href="../Truyện ý nghĩa.html">Truyện Ý Nghĩa</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about.html">Giới thiệu</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center ms-auto me-3 gap-2">
+          <button class="circle-button" id="toggleDark">
+            <i class="bi bi-lightbulb"></i>
+          </button>
+          <!-- Nút đăng nhập hoặc tài khoản -->
+          <button id="authButton" class="btn btn-outline-light ms-2 rounded-pill me-3" data-bs-toggle="modal"
+            data-bs-target="#authModal">
+            Đăng nhập
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Nội dung trang đọc truyện -->
+    <div class="container mt-4">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb-container fade-in">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../Trangchu.html">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="javascript:history.back()">Phi Tần Tranh Dành Sủng Ái</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Nội Dung Truyện</li>
+          </ol>
+        </nav>
+      </div>
+
+      <!-- Thanh điều khiển đọc truyện -->
+      <div class="reading-controls d-flex justify-content-between align-items-center">
+        <div class="font-size-control d-flex align-items-center">
+          <button class="btn btn-sm btn-outline-secondary rounded-circle" id="decreaseFont">
+            <i class="bi bi-dash"></i>
+          </button>
+          <span class="font-size-value mx-2" id="currentFontSize">18</span>
+          <button class="btn btn-sm btn-outline-secondary rounded-circle" id="increaseFont">
+            <i class="bi bi-plus"></i>
+          </button>
+        </div>
+        <div class="color-toggle">
+          <button class="btn btn-sm btn-outline-secondary" id="toggleMode">
+            <i class="bi bi-moon"></i> Chế độ đọc
+          </button>
+        </div>
+        <div class="bookmark">
+          
+          <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-volume-up"></i> Nghe</button>
+    
+        </div>
+      </div>
+
+      <!-- Tiêu đề chương -->
+      <div class="chapter-title-container text-center mb-4">
+        <h1 class="story-title">Phi Tần Tranh Dành Sủng Ái (Chương II)</h1>
+        <div class="reading-time">Thời gian đọc: khoảng 8 phút</div>
+      </div>
+      <!-- Nội dung truyện -->
+      <div class="story-content fade-in" id="storyContent">
+        <!-- Nội dung truyện sẽ được thêm vào đây -->
+
+<p>Nhưng sự thật chứng minh, ta vẫn nghĩ quá đơn giản, Lý Tuấn Vân cấm túc ta, thời gian là đến ngày mười sáu tháng sau.</p>
+
+<p>Nói cách khác, ta không thể tham gia tuyển tú được rồi.</p>
+
+<p>Lý Tuấn Vân quả thật nói là làm, chiều ngày mười lăm ta muốn ra ngoài cũng bị bắt trở lại.</p>
+
+<p>Một Hoàng hậu mà làm đến mức này, thật là tủi nhục.</p>
+
+<p>"Nghe nói hôm nay là Hoàng thượng cùng Thái hậu nương nương cùng tuyển chọn, Diệu quý phi không tham gia." Xuân Đào vừa mát-xa vai cho ta, vừa nói những gì nàng nghe được bên ngoài.</p>
+
+<p>Ta hỏi: "Đã tuyển chọn được bao nhiêu tú nữ?"</p>
+
+<p>"Không nhiều lắm, chỉ có chín người."</p>
+
+<p>Cũng khá ít. Ta nghĩ.</p>
+
+<p>Chắc là vì Châu Diệu Nhân vừa sẩy thai, Lý Tuấn Vân yêu nàng ta như vậy, đương nhiên không nỡ để nàng ta ghen tị quá nhiều.</p>
+
+<p>"Hoàng hậu nương nương, trong chín người mới đến, có hai người được phong làm Tiệp dư, một là con gái của Lễ bộ Thượng thư Lưu Vi Lịch, tên là Lưu Đỗ Nhược, và một là con gái của Đô Sát viện Tả Đô Ngự sử, tên là Hà Thanh Thanh."</p>
+
+<p>Hà Thanh Thanh, Thanh Thanh, Thanh Sinh? Tên này không hay lắm.</p>
+
+<p>"Còn lại bảy người, đều phong làm Mỹ nhân."</p>
+
+<p>Ta gật đầu, hài lòng nói: "Thế này thì tốt rồi, sau này cuối cùng cũng có người bầu bạn nói chuyện với ta."</p>
+
+<p>Trước đây ta đến tìm Châu Diệu Nhân chơi, nàng ta đều không mấy khi tiếp ta, hoặc là lấy cớ sức khỏe không tốt để từ chối, hoặc là ngập ngừng không thú vị, ta có đáng sợ đến thế không?</p>
+
+<p>Mà bây giờ nàng ta lại sảy thai, chẳng phải càng phải tránh mặt ta, chỉ e rằng đã hận ta đến chết rồi.</p>
+
+<p>"Nhưng nương nương, người không giận sao? Phải chia sẻ phu quân với nhiều người như vậy..." Xuân Đào không hiểu hỏi ta.</p>
+
+<p>Ta mỉm cười, vừa nghịch những bông hoa trên bàn trang điểm, vừa trả lời nàng: "Xuân Đào, ngài ấy không phải là phu quân của ta, ngài ấy là Hoàng đế."</p>
+
+<p>"Nhưng Hoàng đế chẳng phải là phu quân của nương nương sao?"</p>
+
+<p>Xuân Đào à, nàng vẫn ngây thơ như bốn năm trước khi mới vào phủ, cũng tốt, như vậy cũng hay.</p>
+
+<p>Trên đời này ngu ngốc nhất chính là coi Hoàng đế là tình nhân. Mẫu thân ta từ nhỏ đã dạy ta như vậy.</p>
+
+<p>Quả thực, từ xưa đế vương đa tình bạc bẽo, điều này ta đã hiểu rõ ngay ngày thứ hai khi vừa vào Đông cung — ngày hôm đó, Tiên đế ban chết cho Tiên hoàng hậu.</p>
+
+<p>Đây cũng là lý do ta không mấy coi trọng vị trí Hoàng hậu này.</p>
+
+<p>Aiya, nghĩ nhiều quá rồi.</p>
+
+<p>Trời đã tối, ta chuẩn bị cởi y phục đi ngủ, dù gì ngày mai ta còn phải đi thăm các tỷ muội của ta nữa!</p>
+
+<p>"Hoàng thượng giá đáo---" Tiếng của Tô công công vang lên ngoài cửa.</p>
+
+<p>Chuyện gì vậy? Không phải là đến để gia hạn cấm túc của ta chứ?</p>
+
+<p>Chưa kịp nghĩ kỹ, bóng dáng Lý Tuấn Vân đã xuất hiện.</p>
+
+<p>Ta quỳ xuống hành lễ: "Bệ hạ an hảo."</p>
+
+<p>Lý Tuấn Vân liếc nhìn ta: "Ta sớm muộn cũng phế ngươi."</p>
+
+<p>Vâng vâng, phế ta đi, mau phế ta đi, ngày nào cũng đến đây chỉ để nói câu này, có thấy phiền không?</p>
+
+<p>Một phút trôi qua, chân ta bắt đầu tê.</p>
+
+<p>"Đã đến giờ nghỉ rồi, bệ hạ, không biết hôm nay bệ hạ lật thẻ của ai? Lưu Tiệp dư? Hà Tiệp dư? Hay là những mỹ nhân khác?" Ta nóng lòng muốn đuổi ngài đi, chân ta thật sự tê rồi!</p>
+
+<p>Ngài từ tốn rót cho mình một chén trà: "Hừ, ngươi quản ta."</p>
+
+<p>Được được, ta không quản ngài, nhưng ngài có thể để ta đứng dậy không.</p>
+
+<p>Ta muốn khóc mà không có nước mắt. Nếu còn quỳ nữa chắc ta sẽ ngã, đến lúc đó Lý Tuấn Vân không chừng sẽ phạt ta thêm một tháng cấm túc vì tội không giữ lễ nghi.</p>
+
+<p>"Ngươi đứng lên đi." Tạ ơn trời đất.</p>
+
+<p>Ta được Xuân Đào đỡ ngồi lên giường, vừa ngẩng đầu đã thấy Lý Tuấn Vân vẫn ngồi đó.</p>
+
+<p>Lời đã nói hết rồi, sao còn chưa đi?</p>
+
+<p>"Hôm nay là ngày mười lăm, trẫm phải ở cùng hoàng hậu." Ngài đã ra lệnh cho tỳ nữ của ta giúp ngài cởi y phục.</p>
+
+<p>Tại sao không dùng tỳ nữ của mình mà phải dùng của ta?</p>
+
+<p>Không đúng, ta nên chú ý cái khác.</p>
+
+<p>"Bệ hạ, Diệu quý phi vừa mất con, chắc chắn đang rất yếu đuối, ngài vẫn nên chăm sóc nàng nhiều hơn." Nói trắng ra, ta không muốn ngủ cùng ngài.</p>
+
+<p>"Ngươi đuổi trẫm?" Ánh mắt lạnh lùng của ngài chiếu qua, ta rùng mình một cái.</p>
+
+<p>Ta vội vàng hành lễ xin lỗi: "Thần thiếp không dám, dưới trời đất này đều là đất của vua, thần thiếp sao dám đuổi hoàng thượng đi."</p>
+
+<p>Ngài lại hừ lạnh một tiếng, ta bắt đầu nghi ngờ rằng ngoài việc dùng mũi để bày tỏ sự khinh bỉ, ngài chẳng biết làm gì khác.</p>
+
+<p>Ta thở phào nhẹ nhõm, tiến lên giúp ngài cởi y phục.</p>
+
+<p>Ai mà chẳng phải sống qua ngày.</p>
+
+<p>Sáng sớm hôm sau, khi ta tỉnh dậy, Lý Tuấn Vân đã không còn ở đó.</p>
+
+<p>Phải nói điều duy nhất mà ngài đối xử tốt với ta là không bao giờ yêu cầu giờ giấc của ta, để ta ngủ bao lâu tùy thích, tốt nhất là ngủ mãi mãi.</p>
+
+<p>Tiếc rằng ta không thể làm ngài vừa ý, ta phải sống tốt.</p>
+
+<p>"Xuân Đào."</p>
+
+<p>Ta gọi Xuân Đào vào, rồi nói: "Mang thuốc vào."</p>
+
+<p>"Nương nương..." Xuân Đào nhăn mày không muốn.</p>
+
+<p>"Mang vào." Ta ra lệnh.</p>
+
+<p>Thấy ta kiên quyết như vậy, Xuân Đào mới miễn cưỡng bước ra ngoài, không lâu sau, nàng mang vào một bát thuốc đen sì.</p>
+
+<p>Ta nhịn đắng mà nuốt hết.</p>
+
+<p>Mỗi lần Lý Tuấn Vân qua đêm ở đây, ngày hôm sau ta đều bảo người sắc thuốc cho ta.</p>
+
+<p>Bởi vì, con gái của tể tướng đương triều, em gái của đại tướng quân hộ quốc không thể có con.</p>
+
+<p>Dù Lý Tuấn Vân không nói, ta cũng hiểu rõ.</p>
+
+<p>Sau khi vị đắng trong miệng tan đi, ta thoải mái đứng dậy đi đến trước bàn trang điểm.</p>
+
+<p>"Đến đây, để bổn cung xem mặt mũi những người mới trong cung nào."</p>
+
+<p>Cung Vĩnh Thọ đã lâu không có nhiều người đến vậy.</p>
+
+<p>Ta nhìn những phi tần trẻ măng ngồi bên dưới, cảm thấy vui vẻ như đã lâu rồi không có.</p>
+
+<p>"Các vị không cần phải khách sáo, chị em trò chuyện thoải mái, sau này nếu có chỗ nào chưa chu đáo, cứ nói với bổn cung."</p>
+
+<p>Ta tự cho rằng giọng nói của mình đủ dịu dàng, nụ cười đủ thân thiện, nhưng dường như, họ đều rất sợ ta, hay là vì lần đầu gặp mặt nên còn ngại ngùng?</p>
+
+<p>"Hoàng hậu nương nương, điểm tâm trong cung của người thật ngon."</p>
+
+<p>Đang lúc bầu không khí có chút ngượng ngùng, Lan Mỹ nhân trẻ nhất mỉm cười nói, miệng còn ngậm nửa miếng bánh mã thầy.</p>
+
+<p>Có lẽ dáng vẻ của nàng quá đáng yêu, ta không nhịn được mà cười: "Lan Mỹ nhân thích điểm tâm trong cung của ta thì cứ ăn nhiều vào, sau này cũng có thể thường xuyên đến cung Vĩnh Thọ chơi."</p>
+
+<p>Lan Mỹ nhân tròn xoe mắt, cười ngây ngô: "Thần thiếp nếu ăn hết của nương nương thì đừng trách nhé!"</p>
+
+<p>Các phi tần khác cũng cười theo, không khí mới phần nào dịu lại.</p>
+
+<p>"Nói đến việc thị tẩm, bổn cung sẽ lần lượt sắp xếp, trước tiên sẽ là người có danh vị lớn nhất trong các ngươi, Lưu Tiệp dư, Hà Tiệp dư, ai muốn trước nào?"</p>
+
+<p>Vừa dứt lời, ta thấy hai nàng đỏ mặt.</p>
+
+<p>"Vẫn là... Hà muội muội trước đi."</p>
+
+<p>"Không không, Lưu tỷ tỷ trước đi..."</p>
+
+<p>"Không không không, Hà muội muội trước..."</p>
+
+<p>Hai người liền đùn đẩy nhau, tình thế suýt nữa trở nên căng thẳng làm ta bối rối.</p>
+
+<p>Chẳng lẽ Lý Tuấn Vân trong mắt họ là con hổ ăn thịt người? Sao ai cũng không muốn? Đặc biệt là Lưu Tiệp dư, sự chán ghét dường như sắp tràn ra mặt.</p>
+
+<p>"Được rồi, được rồi, hai ngươi đừng cãi nữa." Ta thấy cãi nhau cũng không phải cách, vội vàng ngăn lại, rồi quay sang con gái của Vương Thị Lang.</p>
+
+<p>"Vương Mỹ nhân, hay là ngươi tới đi?"</p>
+
+      </div>
+  </div>
+      </div>
+    </div>
+<div class="container comment-section mt-4">
+  <h4 class="mb-3">Bình luận</h4>
+
+  <!-- Form bình luận -->
+  <div id="commentForm" class="mb-4 p-3 rounded shadow-sm bg-light">
+    <div class="mb-2">
+      <input type="text" id="username" class="form-control" placeholder="Tên của bạn">
+    </div>
+    <div class="mb-2">
+      <textarea id="content" class="form-control" rows="3" placeholder="Nhập bình luận..."></textarea>
+    </div>
+    <button id="submitComment" class="btn btn-primary">Gửi bình luận</button>
+  </div>
+
+  <!-- Danh sách bình luận -->
+  <ul id="commentList" class="list-group">
+    <!-- Các bình luận sẽ được thêm vào đây bằng JavaScript -->
+  </ul>
+</div>
+
+  <!-- Modal Đăng nhập/Đăng ký -->
+<div class="modal fade" id="authModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="authTitle">Đăng nhập</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Form Đăng nhập -->
+        <div id="loginForm">
+          <input type="text" id="loginUsername" class="form-control mb-2" placeholder="Tên đăng nhập">
+          <input type="password" id="loginPassword" class="form-control mb-2" placeholder="Mật khẩu">
+          <button class="btn btn-success w-100 mb-2" onclick="handleLogin()">Đăng nhập</button>
+          <p class="text-center">Chưa có tài khoản? <a href="#" onclick="switchToRegister()">Đăng ký</a></p>
+        </div>
+        <!-- Form Đăng ký -->
+        <div id="registerForm" style="display: none;">
+          <input type="text" id="regUsername" class="form-control mb-2" placeholder="Tên đăng nhập">
+          <input type="password" id="regPassword" class="form-control mb-2" placeholder="Mật khẩu">
+          <input type="password" id="regConfirm" class="form-control mb-2" placeholder="Nhập lại mật khẩu">
+          <button class="btn btn-success w-100 mb-2" onclick="handleRegister()">Đăng ký</button>
+          <p class="text-center">Đã có tài khoản? <a href="#" onclick="switchToLogin()">Đăng nhập</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+   <!-- Modal thông tin tài khoản -->
+<div class="modal fade" id="profileModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Thông tin tài khoản</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Màn hình lựa chọn -->
+        <div id="profileOptions" class="text-center">
+          <div class="avatar-container mb-3">
+            <img id="userAvatar" src="../../images/LOGO.png" alt="Avatar" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+            <button id="editAvatarButton" class="btn btn-primary btn-sm edit-avatar-btn" onclick="document.getElementById('avatarUpload').click()">Sửa avatar</button>
+            <input type="file" id="avatarUpload" style="display: none;" accept="image/*" onchange="changeAvatar(this)">
+          </div>
+          <h4 id="profileUsername" class="mb-4">Tên người dùng</h4>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="card option-card" style="cursor: pointer;" onclick="showSection('infoSection')">
+                <div class="card-body">
+                  <i class="bi bi-person-circle fs-3 mb-2"></i>
+                  <h6>Cập nhật thông tin</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card option-card" style="cursor: pointer;" onclick="showSection('passwordSection')">
+                <div class="card-body">
+                  <i class="bi bi-lock-fill fs-3 mb-2"></i>
+                  <h6>Đổi mật khẩu</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card option-card" style="cursor: pointer;" onclick="showSection('savedStoriesSection')">
+                <div class="card-body">
+                  <i class="bi bi-bookmark-fill fs-3 mb-2"></i>
+                  <h6>Truyện đã lưu</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Phần Cập nhật thông tin -->
+        <div id="infoSection" style="display: none;">
+          <div class="d-flex align-items-center mb-3">
+            <button class="btn btn-outline-secondary me-2" onclick="showSection('profileOptions')"><i class="bi bi-arrow-left"></i> Quay lại</button>
+            <h5 class="mb-0">Cập nhật thông tin</h5>
+          </div>
+          <form id="updateInfoForm">
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Họ tên</label>
+              <input type="text" class="form-control" id="fullName" placeholder="Nhập họ tên">
+            </div>
+            <div class="mb-3">
+              <label for="phoneNumber" class="form-label">Số điện thoại</label>
+              <input type="tel" class="form-control" id="phoneNumber" placeholder="Nhập số điện thoại">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Nhập email">
+            </div>
+            <button type="button" class="btn btn-primary w-100" onclick="updateUserInfo()">Cập nhật thông tin</button>
+          </form>
+        </div>
+        <!-- Phần Đổi mật khẩu -->
+        <div id="passwordSection" style="display: none;">
+          <div class="d-flex align-items-center mb-3">
+            <button class="btn btn-outline-secondary me-2" onclick="showSection('profileOptions')"><i class="bi bi-arrow-left"></i> Quay lại</button>
+            <h5 class="mb-0">Đổi mật khẩu</h5>
+          </div>
+          <form id="changePasswordForm">
+            <div class="mb-3">
+              <label for="currentPassword" class="form-label">Mật khẩu hiện tại</label>
+              <input type="password" class="form-control" id="currentPassword">
+            </div>
+            <div class="mb-3">
+              <label for="newPassword" class="form-label">Mật khẩu mới</label>
+              <input type="password" class="form-control" id="newPassword">
+            </div>
+            <div class="mb-3">
+              <label for="confirmNewPassword" class="form-label">Xác nhận mật khẩu mới</label>
+              <input type="password" class="form-control" id="confirmNewPassword">
+            </div>
+            <button type="button" class="btn btn-primary w-100" onclick="changePassword()">Cập nhật mật khẩu</button>
+          </form>
+        </div>
+        <!-- Phần Truyện đã lưu -->
+        <div id="savedStoriesSection" style="display: none;">
+          <div class="d-flex align-items-center mb-3">
+            <button class="btn btn-outline-secondary me-2" onclick="showSection('profileOptions')"><i class="bi bi-arrow-left"></i> Quay lại</button>
+            <h5 class="mb-0">Truyện đã lưu</h5>
+          </div>
+          <div id="savedStoriesList" class="row">
+            <!-- Danh sách truyện sẽ được thêm bằng JavaScript -->
+          </div>
+          <p id="noSavedStories" class="text-center mt-3" style="display: none;">Bạn chưa lưu truyện nào.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" onclick="logout()">Đăng xuất</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="../../JS/audio-player.js"></script>
+
+  <script src="../../JS/cactrang.js"></script>
+</body>
+
+</html>

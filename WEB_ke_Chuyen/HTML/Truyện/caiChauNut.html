@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đọc Truyện - WebketruyenQ&V</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../../CSS/trangchu.css">
+  <link rel="stylesheet" href="../../CSS/read.css">
+</head>
+
+<body>
+  <div class="main-content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand ms-3" href="../Trangchu.html">WebketruyenQ&V</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto ms-3">
+          <li class="nav-item">
+            <a class="nav-link" href="../Trangchu.html">Trang chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Truyện mới.html">Truyện Mới</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownTheLoai" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Thể Loại
+            </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownTheLoai">
+              <a class="dropdown-item" href="../Truyện ma.html">Truyện Ma</a>
+              <a class="dropdown-item" href="../Truyện cổ tích.html">Cổ Tích</a>
+              <a class="dropdown-item" href="../Truyện cười.html">Truyện Cười</a>
+              <a class="dropdown-item" href="../Truyện ngôn tình.html">Truyện Ngôn Tình</a>
+              <a class="dropdown-item" href="../Truyện ý nghĩa.html">Truyện Ý Nghĩa</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about.html">Giới thiệu</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center ms-auto me-3 gap-2">
+          <button class="circle-button" id="toggleDark">
+            <i class="bi bi-lightbulb"></i>
+          </button>
+          <!-- Nút đăng nhập hoặc tài khoản -->
+          <button id="authButton" class="btn btn-outline-light ms-2 rounded-pill me-3" data-bs-toggle="modal"
+            data-bs-target="#authModal">
+            Đăng nhập
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Nội dung trang đọc truyện -->
+    <div class="container mt-4">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb-container fade-in">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../Trangchu.html">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="javascript:history.back()">Cái chậu nứt</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Nội Dung Truyện</li>
+          </ol>
+        </nav>
+      </div>
+
+      <!-- Thanh điều khiển đọc truyện -->
+      <div class="reading-controls d-flex justify-content-between align-items-center">
+        <div class="font-size-control d-flex align-items-center">
+          <button class="btn btn-sm btn-outline-secondary rounded-circle" id="decreaseFont">
+            <i class="bi bi-dash"></i>
+          </button>
+          <span class="font-size-value mx-2" id="currentFontSize">18</span>
+          <button class="btn btn-sm btn-outline-secondary rounded-circle" id="increaseFont">
+            <i class="bi bi-plus"></i>
+          </button>
+        </div>
+        <div class="color-toggle">
+          <button class="btn btn-sm btn-outline-secondary" id="toggleMode">
+            <i class="bi bi-moon"></i> Chế độ đọc
+          </button>
+        </div>
+        <div class="bookmark">
+          
+          <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-volume-up"></i> Nghe</button>
+    
+        </div>
+      </div>
+
+      <!-- Tiêu đề chương -->
+      <div class="chapter-title-container text-center mb-4">
+        <h1 class="story-title">Cái chậu nứt</h1>
+        <div class="reading-time">Thời gian đọc: khoảng 5 phút</div>
+      </div>
+      <!-- Nội dung truyện -->
+      <div class="story-content fade-in" id="storyContent">
+        <!-- Nội dung truyện sẽ được thêm vào đây -->
+
+<p>Trong cuộc sống, chúng ta ai cũng mang trong mình những khiếm khuyết, nhưng điều quan trọng là chúng ta nhìn nhận và đánh giá bản thân như thế nào. Câu chuyện Cái chậu nứt là một bài học sâu sắc về giá trị cá nhân, giúp chúng ta nhận ra rằng ngay cả những điểm yếu của bản thân cũng có thể mang đến điều tốt đẹp cho cuộc đời.</p>
+
+<p>Ngày xửa ngày xưa, có một ông lão mỗi sáng đều ra sông gánh nước về nhà. Ông chứa nước trong hai chiếc chậu đất lớn, treo ở hai đầu đòn gánh đặt ngang vai.</p>
+
+<p>Hai chiếc chậu nhẵn mịn, tròn trịa và hoàn hảo để chứa dòng nước trong mát từ con sông. Chúng giống hệt nhau, chỉ khác một điều: một chiếc đã cũ hơn chiếc còn lại. Sau quãng đường dài đầy bụi từ sông về, ông lão đổ nước từ hai chiếc chậu vào các chum chứa trong nhà.</p>
+
+<p>Một ngày nọ, ông lão phát hiện chiếc chậu cũ đã xuất hiện một vết nứt nhỏ, khiến nước rỉ ra ngoài. Theo thời gian, những vết nứt khác dần xuất hiện, và ngày càng nhiều nước chảy ra trong suốt quãng đường từ sông về nhà. Chẳng bao lâu sau, khi đến cổng nhà, chiếc chậu nứt chỉ còn giữ lại được một nửa lượng nước ban đầu.</p>
+
+<p>Người hàng xóm nhìn thấy vậy liền nói: “Hãy vứt chiếc chậu cũ nứt nẻ đó đi và thay bằng một chiếc mới. Chẳng bao lâu nữa nó sẽ không thể giữ được chút nước nào! Nó đã hỏng rồi, không thể sửa chữa được nữa, và chỉ làm được một nửa công việc so với chiếc chậu kia.”</p>
+
+<p>Nghe vậy, chiếc chậu nguyên vẹn dường như phồng lên vì tự hào. Ông lão không nói gì cả. Ông vẫn nhẹ nhàng đổ phần nước còn lại trong chiếc chậu nứt vào chum, sau đó đặt nó cẩn thận vào dây đeo, sẵn sàng cho chuyến đi vào ngày hôm sau.</p>
+
+<p>Chiếc chậu nứt cảm thấy xấu hổ về những khiếm khuyết của mình. Nó buồn bã vì chỉ có thể làm được một nửa công việc so với trước đây. Đêm đó, nằm bên cạnh người bạn của mình – người bạn đã im lặng suốt từ sáng sau lời nhận xét của người hàng xóm – chiếc chậu nứt rơi nước mắt vì cảm thấy mình kém cỏi hơn xưa.</p>
+
+<p>Chiếc chậu nứt nghĩ thầm trong nước mắt: “Mình chẳng còn giá trị gì nữa, đúng như lời người hàng xóm nói“.</p>
+
+<p>Và chính nỗi đau ấy khiến những vết nứt trên nó càng rộng hơn.</p>
+
+<p>Sáng hôm sau, khi ra đến bờ sông, chiếc chậu nứt lấy hết can đảm và lên tiếng khi ông lão nhúng nó vào dòng nước chảy xiết.</p>
+
+<p>Nó nói: “Con cảm thấy rất xấu hổ về bản thân và muốn xin lỗi ông.”</p>
+
+<p>Ông lão nhẹ nhàng hỏi: “Tại sao? Con có gì mà phải xấu hổ?”</p>
+
+<p>Chiếc chậu thổ lộ, lời nói tuôn ra nhanh như dòng sông đang chảy: “Con từng hoàn hảo và được trân trọng, nhưng bây giờ con đã già, nứt nẻ và vô dụng, đúng như lời người hàng xóm nói. Chính những khuyết điểm của con khiến con trở thành gánh nặng hơn là một sự giúp đỡ. Ông làm tất cả mọi việc, còn con chẳng có ích gì cả.”</p>
+
+<p>Nhưng ông lão đầy lòng bao dung và yêu quý chiếc chậu nứt. Ông mỉm cười và nói: “Hãy nhìn những bông hoa trên đường về nhà. Ta nghĩ chúng sẽ làm con vui lên.”</p>
+
+<p>Quả thật, khi ông lão gánh nước lên con dốc về nhà, chiếc chậu nứt bắt đầu chú ý đến những bông hoa ven đường. Trước đây, nó quá bận tâm với những vết nứt và khiếm khuyết của mình nên chưa từng để ý đến vẻ đẹp ấy. Nó cảm nhận được ánh nắng ấm áp phủ lên mình, nhẹ nhàng đung đưa theo nhịp bước của ông lão. Thậm chí, nó còn có cảm giác như những vết nứt của mình đang dần khép lại.</p>
+
+<p>Nhưng khi về đến nhà, một nửa lượng nước trong nó vẫn bị rò rỉ ra ngoài, và nó lại chìm vào tuyệt vọng.</p>
+
+<p>Nó nức nở: “Con xin lỗi.”</p>
+
+<p>Ông lão hỏi: “Con có để ý rằng hoa chỉ mọc ở một bên đường không? Ta đã gieo hạt giống bên phía con khi nhận ra con có vết nứt. Mỗi lần con nứt thêm một chút, ta lại gieo thêm hạt giống. Và mỗi sáng, khi ta gánh nước lên nhà, con đã tưới nước cho chúng, giúp chúng nở rộ.”</p>
+
+<p>“Vào buổi chiều, ta hái những bông hoa đó và đặt lên bàn trong nhà. Nếu không có con với những vết nứt của mình, ta đã không có những bông hoa tuyệt đẹp này tô điểm cho ngôi nhà, cũng chẳng có niềm vui để tận hưởng trên con đường từ sông về.”</p>
+
+<p>Nghe vậy, chiếc chậu nứt không còn cảm thấy mình “kém cỏi” hay vô dụng nữa. Ngược lại, nó cảm thấy được yêu thương và có giá trị. Nó hiểu ra ý nghĩa của mình, và tận hưởng từng chuyến đi đến dòng sông mỗi ngày. Nó vui vẻ khi tưới nước cho những bông hoa và ngắm chúng lớn lên.</p>
+
+<p>Cuối cùng, những vết nứt làm nó yếu dần và rồi vỡ thành từng mảnh. Ông lão chôn những mảnh vỡ bên vệ đường để rễ cây quấn quanh, giúp chúng bám chặt vào đất, vững vàng và mạnh mẽ hơn.</p>
+
+<p>Ý nghĩa câu chuyện Cái chậu nứt</p>
+
+<p>Câu chuyện Cái chậu nứt mang một thông điệp sâu sắc về sự chấp nhận bản thân và giá trị trong sự khuyết điểm của mỗi người. Cái chậu nứt, mặc dù không còn hoàn hảo như trước, nhưng lại có thể làm một điều tốt đẹp mà cái chậu còn lại không thể làm được: tưới nước cho những bông hoa trên đường đi.</p>
+
+<p>Qua câu chuyện, chúng ta học được rằng mỗi khi chúng ta cảm thấy mình không còn hữu ích hay có giá trị, thực tế những khiếm khuyết và thiếu sót của chúng ta lại có thể mang lại những kết quả tuyệt vời mà người khác không thể có.</p>
+
+<p>Câu chuyện cũng nhấn mạnh rằng sự hoàn hảo không phải là điều quan trọng nhất. Những khuyết điểm và sự khác biệt của chúng ta chính là những yếu tố tạo nên sự độc đáo và đóng góp vào một cái gì đó lớn lao hơn. Cũng như cái chậu nứt, khi chúng ta biết tận dụng những gì mình có, chúng ta có thể làm được nhiều điều có ích, thậm chí là giúp đỡ những người xung quanh một cách không ngờ tới.</p>
+
+<p>Cuối cùng, câu chuyện khuyến khích chúng ta hãy yêu quý bản thân và những gì mình có, bất kể chúng ta có hoàn hảo hay không. Chỉ cần chúng ta nhận ra và chấp nhận bản thân, chúng ta có thể tìm ra cách để sống có ích và hạnh phúc hơn.</p>
+
+<p>Hãy luôn tự tin vào bản thân, vì ngay cả “những vết nứt” cũng có thể tạo nên vẻ đẹp trong cuộc sống!</p>
+
+
+      </div>
+  </div>
+      </div>
+    </div>
+<div class="container comment-section mt-4">
+  <h4 class="mb-3">Bình luận</h4>
+
+  <!-- Form bình luận -->
+  <div id="commentForm" class="mb-4 p-3 rounded shadow-sm bg-light">
+    <div class="mb-2">
+      <input type="text" id="username" class="form-control" placeholder="Tên của bạn">
+    </div>
+    <div class="mb-2">
+      <textarea id="content" class="form-control" rows="3" placeholder="Nhập bình luận..."></textarea>
+    </div>
+    <button id="submitComment" class="btn btn-primary">Gửi bình luận</button>
+  </div>
+
+  <!-- Danh sách bình luận -->
+  <ul id="commentList" class="list-group">
+    <!-- Các bình luận sẽ được thêm vào đây bằng JavaScript -->
+  </ul>
+</div>
+
+  <!-- Modal Đăng nhập/Đăng ký -->
+<div class="modal fade" id="authModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="authTitle">Đăng nhập</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Form Đăng nhập -->
+        <div id="loginForm">
+          <input type="text" id="loginUsername" class="form-control mb-2" placeholder="Tên đăng nhập">
+          <input type="password" id="loginPassword" class="form-control mb-2" placeholder="Mật khẩu">
+          <button class="btn btn-success w-100 mb-2" onclick="handleLogin()">Đăng nhập</button>
+          <p class="text-center">Chưa có tài khoản? <a href="#" onclick="switchToRegister()">Đăng ký</a></p>
+        </div>
+        <!-- Form Đăng ký -->
+        <div id="registerForm" style="display: none;">
+          <input type="text" id="regUsername" class="form-control mb-2" placeholder="Tên đăng nhập">
+          <input type="password" id="regPassword" class="form-control mb-2" placeholder="Mật khẩu">
+          <input type="password" id="regConfirm" class="form-control mb-2" placeholder="Nhập lại mật khẩu">
+          <button class="btn btn-success w-100 mb-2" onclick="handleRegister()">Đăng ký</button>
+          <p class="text-center">Đã có tài khoản? <a href="#" onclick="switchToLogin()">Đăng nhập</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+   <!-- Modal thông tin tài khoản -->
+<div class="modal fade" id="profileModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Thông tin tài khoản</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Màn hình lựa chọn -->
+        <div id="profileOptions" class="text-center">
+          <div class="avatar-container mb-3">
+            <img id="userAvatar" src="../../images/LOGO.png" alt="Avatar" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+            <button id="editAvatarButton" class="btn btn-primary btn-sm edit-avatar-btn" onclick="document.getElementById('avatarUpload').click()">Sửa avatar</button>
+            <input type="file" id="avatarUpload" style="display: none;" accept="image/*" onchange="changeAvatar(this)">
+          </div>
+          <h4 id="profileUsername" class="mb-4">Tên người dùng</h4>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="card option-card" style="cursor: pointer;" onclick="showSection('infoSection')">
+                <div class="card-body">
+                  <i class="bi bi-person-circle fs-3 mb-2"></i>
+                  <h6>Cập nhật thông tin</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card option-card" style="cursor: pointer;" onclick="showSection('passwordSection')">
+                <div class="card-body">
+                  <i class="bi bi-lock-fill fs-3 mb-2"></i>
+                  <h6>Đổi mật khẩu</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card option-card" style="cursor: pointer;" onclick="showSection('savedStoriesSection')">
+                <div class="card-body">
+                  <i class="bi bi-bookmark-fill fs-3 mb-2"></i>
+                  <h6>Truyện đã lưu</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Phần Cập nhật thông tin -->
+        <div id="infoSection" style="display: none;">
+          <div class="d-flex align-items-center mb-3">
+            <button class="btn btn-outline-secondary me-2" onclick="showSection('profileOptions')"><i class="bi bi-arrow-left"></i> Quay lại</button>
+            <h5 class="mb-0">Cập nhật thông tin</h5>
+          </div>
+          <form id="updateInfoForm">
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Họ tên</label>
+              <input type="text" class="form-control" id="fullName" placeholder="Nhập họ tên">
+            </div>
+            <div class="mb-3">
+              <label for="phoneNumber" class="form-label">Số điện thoại</label>
+              <input type="tel" class="form-control" id="phoneNumber" placeholder="Nhập số điện thoại">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Nhập email">
+            </div>
+            <button type="button" class="btn btn-primary w-100" onclick="updateUserInfo()">Cập nhật thông tin</button>
+          </form>
+        </div>
+        <!-- Phần Đổi mật khẩu -->
+        <div id="passwordSection" style="display: none;">
+          <div class="d-flex align-items-center mb-3">
+            <button class="btn btn-outline-secondary me-2" onclick="showSection('profileOptions')"><i class="bi bi-arrow-left"></i> Quay lại</button>
+            <h5 class="mb-0">Đổi mật khẩu</h5>
+          </div>
+          <form id="changePasswordForm">
+            <div class="mb-3">
+              <label for="currentPassword" class="form-label">Mật khẩu hiện tại</label>
+              <input type="password" class="form-control" id="currentPassword">
+            </div>
+            <div class="mb-3">
+              <label for="newPassword" class="form-label">Mật khẩu mới</label>
+              <input type="password" class="form-control" id="newPassword">
+            </div>
+            <div class="mb-3">
+              <label for="confirmNewPassword" class="form-label">Xác nhận mật khẩu mới</label>
+              <input type="password" class="form-control" id="confirmNewPassword">
+            </div>
+            <button type="button" class="btn btn-primary w-100" onclick="changePassword()">Cập nhật mật khẩu</button>
+          </form>
+        </div>
+        <!-- Phần Truyện đã lưu -->
+        <div id="savedStoriesSection" style="display: none;">
+          <div class="d-flex align-items-center mb-3">
+            <button class="btn btn-outline-secondary me-2" onclick="showSection('profileOptions')"><i class="bi bi-arrow-left"></i> Quay lại</button>
+            <h5 class="mb-0">Truyện đã lưu</h5>
+          </div>
+          <div id="savedStoriesList" class="row">
+            <!-- Danh sách truyện sẽ được thêm bằng JavaScript -->
+          </div>
+          <p id="noSavedStories" class="text-center mt-3" style="display: none;">Bạn chưa lưu truyện nào.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" onclick="logout()">Đăng xuất</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="../../JS/audio-player.js"></script>
+
+  <script src="../../JS/cactrang.js"></script>
+</body>
+
+</html>

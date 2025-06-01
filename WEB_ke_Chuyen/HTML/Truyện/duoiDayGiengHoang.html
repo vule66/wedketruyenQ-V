@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đọc Truyện - WebketruyenQ&V</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../../CSS/trangchu.css">
+  <link rel="stylesheet" href="../../CSS/read.css">
+</head>
+
+<body>
+  <div class="main-content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand ms-3" href="../Trangchu.html">WebketruyenQ&V</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto ms-3">
+          <li class="nav-item">
+            <a class="nav-link" href="../Trangchu.html">Trang chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Truyện mới.html">Truyện Mới</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownTheLoai" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Thể Loại
+            </a>
+             <div class="dropdown-menu" aria-labelledby="dropdownTheLoai">
+              <a class="dropdown-item" href="../Truyện ma.html">Truyện Ma</a>
+              <a class="dropdown-item" href="../Truyện cổ tích.html">Cổ Tích</a>
+              <a class="dropdown-item" href="../Truyện cười.html">Truyện Cười</a>
+              <a class="dropdown-item" href="../Truyện ngôn tình.html">Truyện Ngôn Tình</a>
+              <a class="dropdown-item" href="../Truyện ý nghĩa.html">Truyện Ý Nghĩa</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about.html">Giới thiệu</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center ms-auto me-3 gap-2">
+          <button class="circle-button" id="toggleDark">
+            <i class="bi bi-lightbulb"></i>
+          </button>
+          <!-- Nút đăng nhập hoặc tài khoản -->
+          <button id="authButton" class="btn btn-outline-light ms-2 rounded-pill me-3" data-bs-toggle="modal"
+            data-bs-target="#authModal">
+            Đăng nhập
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Nội dung trang đọc truyện -->
+    <div class="container mt-4">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb-container fade-in">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../Trangchu.html">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="javascript:history.back()">Dưới đáy giếng hoang</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Nội Dung Truyện</li>
+          </ol>
+        </nav>
+      </div>
+
+      <!-- Thanh điều khiển đọc truyện -->
+      <div class="reading-controls d-flex justify-content-between align-items-center">
+        <div class="font-size-control d-flex align-items-center">
+          <button class="btn btn-sm btn-outline-secondary rounded-circle" id="decreaseFont">
+            <i class="bi bi-dash"></i>
+          </button>
+          <span class="font-size-value mx-2" id="currentFontSize">18</span>
+          <button class="btn btn-sm btn-outline-secondary rounded-circle" id="increaseFont">
+            <i class="bi bi-plus"></i>
+          </button>
+        </div>
+        <div class="color-toggle">
+          <button class="btn btn-sm btn-outline-secondary" id="toggleMode">
+            <i class="bi bi-moon"></i> Chế độ đọc
+          </button>
+        </div>
+        <div class="bookmark">
+          
+          <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-volume-up"></i> Nghe</button>
+    
+        </div>
+      </div>
+
+      <!-- Tiêu đề chương -->
+      <div class="chapter-title-container text-center mb-4">
+        <h1 class="story-title">Dưới đáy giếng hoang</h1>
+        <div class="reading-time">Thời gian đọc: khoảng 15 phút</div>
+      </div>
+      <!-- Nội dung truyện -->
+      <div class="story-content fade-in" id="storyContent">
+        <!-- Nội dung truyện sẽ được thêm vào đây -->
+<p>Bây giờ đã tháng 11, quê tôi đang là mùa gặt lúa. Từ già trẻ, lớn bé, mỗi người mỗi việc tất bật—người lớn làm việc lớn, người bé làm việc bé, từ canh năm tờ mờ sáng cho đến khi góc trời phía tây sẩm tối, mặt trời khuất núi. Ai ai cũng mau chóng làm gấp rút để còn thời gian dọn dẹp nhà cửa, sắm sửa quần áo đón Tết, nhưng đặc biệt hơn cả là để có thời gian đi xem hát.<br><br>
+
+Mọi năm, cứ trước Tết khoảng 2-3 tuần, nhiều đoàn hát từ huyện, tỉnh về làng tôi. Họ diễn các tuồng như *Đường gươm Nguyên Bá*, *Lan và Điệp*, *Người tình trên chiến trận*, *Đêm lạnh chùa hoang*… ở cây đa đầu làng, gần nhà ông bá hộ Tám. Mùa gặt xong, cứ sau bữa cơm tối, đám trẻ con đầu ba chỏm chúng tôi lại xin bố mẹ ra con đê bắt đom đóm. Nói vậy thôi, chứ thật ra là trốn đi xem hát. Gánh hát về làm không gian làng quê sinh động hơn bao giờ hết: tiếng trống tùng tùng, tiếng kèn tò te, tiếng hát của các đào chính, đào kép, tiếng rao bán bánh đa, bánh ú, tiếng mời hàng nước của bà cụ Bảy… Những âm thanh ấy, chúng tôi chỉ nghe vào buổi sáng, nên giờ cảm thấy thú vị phết. Mong ngày nào cũng được như vậy để xóm làng đông vui, náo nhiệt, đầy ánh sáng.<br><br>
+
+Ngồi trên mỏm đá chờ một lúc, giờ diễn cũng tới. Các binh lính, tướng sĩ oai vệ bước ra, vị vua hùng dũng ngồi trên ngai vàng, xung quanh là cung tần mỹ nữ. Vở tuồng vừa mở đầu chưa bao lâu thì mây chuyển đen, mưa bắt đầu rơi, từng hạt to hạt nhỏ thấm đượm trên vai, kèm theo tia chớp vang dậy góc trời xám xịt và gió thổi bay cát bụi mù mịt. Ông bầu thấy vậy đành cáo lỗi bà con và hứa bù vào đêm mai. Lũ trẻ chúng tôi đi về trong thất vọng tràn trề, cứ tưởng được xem cảnh anh hùng đấu tướng cướp, mẹ già mòn mỏi chờ con sau chiến trận, hay Thúy Kiều liều mình cứu cha đẫm nước mắt.<br><br>
+
+Tôi cùng đám bạn đành lê thân về nhà, đến nửa đường thì trời hết mưa, con trăng dần hiện rõ. Dù đi thành 7, 8 người nhưng trong đám đứa nào cũng sợ ma cả mặc dù chưa bao giờ gặp, mà chỉ nghe kể lại từ những người thân trong gia đình.<br><br>
+
+Con đường về làng tối om, nhão bùn, có cố căng mắt thế nào cũng chả thấy gì ngoài cái không gian bao la màu đen bí hiểm ấy. Sương bắt đầu rơi, cái lạnh thấm khắp cơ thể đến từng ngón tay, ngọn tóc. Mặt đất gồ ghề, lởm chởm những viên đá to, đá nhỏ, có những viên sắc nhọn đạp vào chỉ có rách da chảy máu. Đường đã trắc trở, lại còn phải đi ngang qua bãi tha ma. Mồ mã ở đây dày đặc, chen chúc như một rừng bia mộ. Chân hương của nhiều bát nhang đã rụng rời từ lâu vì không ai viếng, và cũng vì mưa gió làm chúng càng bẩn thỉu, thiếu trang nghiêm. Có những ngôi mộ bị đào xới lên mà chả rõ do ai. Nghe bà kể, những ngôi mộ này có từ thời giặc Pháp, Mỹ, chúng bỏ bom chết hàng trăm người. Ngay dưới chân tôi cũng không chừng đang có một quả bom B52.<br><br>
+
+Sâu bên trong, đám cỏ mọc che khuất các ngôi mộ. Dưới ánh trăng yếu ớt, mọi thứ càng mờ ảo. Xa xa, những cây xoài, cây xoan đứng sừng sững như đám người to cao núp trong đó, nhìn chằm chằm ra ngoài. Chả biết do sợ hãi lấn át hay sao mà cơn gió ở đây lạnh lẽo, chết chóc, u ám hơn bao giờ hết. Gió thổi ngang mái tóc, dọc xuống lưng, rồi thoắt qua vai, như có bàn tay vô hình chạm vào. Gió làm cành lá va vào nhau xào xạc, những thân tre kêu “cót két” ai oán, tựa như tiếng gào thét trong đêm đen.<br><br>
+
+Bỗng chốc, trong đầu tôi hiện lên những khung cảnh ma quái, những câu chuyện ma, những oan hồn bà kể, cứ thế trào ra không kiềm chế được. Tôi đành bấm bụng, cắn răng, lấy hết can đảm đi qua. Chả đứa nào dám nói với nhau một lời, hơi thở khó khăn, lồng ngực như bị ai bóp chặt. Con đường phía trước tối đen, sâu hun hút, ở đây lại chẳng có ai, chỉ toàn cỏ với cây, lâu lâu nổi lên vài tiếng chó tru văng vẳng.<br><br>
+
+Đang đi, bỗng từ lùm cây sau lưng có tiếng động. Ngay khi nghe thấy, nỗi sợ chết chóc chạy dọc sống lưng, da gà nổi khắp người, mồ hôi túa ra như tắm, tim đập thình thịch, hơi thở gấp gáp. Cả bọn không dám nhìn nhau, cũng chả ai dám quay lại, vì đứa nào cũng biết cái gì đang ở sau lưng. Tôi chưa kịp bảo chạy thì thằng Toàn cho tay vào túi, lôi cục đá to bằng bàn tay người lớn, ném phăng vào lùm cây, vừa ném vừa hét: “Mày là người hay ma, có ngon thì ra đây!”. Tôi thầm nghĩ, thằng này hôm nay ăn gì mà gan thế, mọi khi nó nhát lắm, đâu dám làm vậy?<br><br>
+
+Ngay sau câu nói khích ấy, lùm cây im bặt, khác hẳn vẻ đáng sợ ban đầu. Cả bọn thở phào, nghĩ chắc là con rắn hay mèo hoang săn mồi đêm. Tôi vừa nhấc chân, chưa kịp ngoảnh lại, thì một bóng trắng mờ ảo vụt qua bên kia đường. Chiếc đèn pin duy nhất trên tay thằng Bình đột nhiên tắt. Tôi hét lên trong sợ hãi tột độ: “Ma, ma kìa! Chạy mau, nhanh lên!”. Vừa dứt lời, cái bóng ấy vồ ra. Mái tóc đen dài che kín nửa khuôn mặt, áo trắng toát không thấy đôi chân. Dù dưới ánh trăng yếu ớt, tôi vẫn thấy rõ nửa mặt bên kia—trắng bệch, gân xanh nổi lên, đầu ngã nghiêng, con mắt sâu hun hút, đen ngòm nhìn trừng trừng vào tôi, ánh mắt lạnh lẽo, chết chóc như cơn gió lúc nãy. Nhìn sang thằng Toàn, lúc nãy hùng hổ bấy nhiêu, giờ mặt nó trắng như cắt không còn giọt máu. Mấy đứa còn lại cũng chẳng khác. Thế là cả đám ba giò tám cẳng, vắt chân lên đầu mà chạy, không đứa nào dám ngoảnh lại.<br><br>
+
+Hơi thở càng lúc càng khó, mồ hôi đầm đìa hòa với cơn gió lạnh ở chốn hoang tàn, làm tâm hồn càng điên dại, hoảng sợ. Có thằng vừa chạy vừa khóc, hét: “Mẹ, mẹ ơi! Cứu con, con chết mất!”. Bùn trên đường văng vào mặt, vào thân thằng chạy sau. Đá sắc, cành gai bên đường cắt vào da thịt, từng giọt máu bay ngược hòa với gió. Chạy một hồi, ánh sáng le lói hiện ra phía trước. Cả đám lao về phía đó. Càng chạy, ánh sáng càng gần, nỗi sợ dần tan biến. Bỗng có giọng phụ nữ gọi lớn: “Thằng Nam, mày đâu rồi? Trốn tao đi xem hát phải không?”. Đang hoảng loạn, tôi bừng tỉnh vì biết đó là mẹ. Chạy đến, tôi ôm chầm mẹ, khóc nức nở. Mẹ thấy vậy, biết tôi gặp chuyện, nên không trách, chỉ dẫn tôi và đám bạn về làng. Mỗi đứa một ngả, đứa nào cũng ôm mặt khóc thút thít.<br><br>
+
+Sáng hôm sau, tỉnh dậy, tôi vứt chăn sang một bên, ngáp dài. Nhớ lại cảnh hãi hùng đêm qua, tôi rùng mình. Chưa kịp bước xuống giường, từ nhà bếp vang lên tiếng mẹ: “Nam! Xuống ăn cháo đi con!”. Tôi đáp ngay: “Dạ!”. Vừa bước xuống, ăn được vài muỗng, thằng Phước hớt hải chạy vào: “Mày biết chuyện gì chưa?”. Tôi ngơ ngác: “Chuyện gì? Tao mới dậy, chưa tỉnh hẳn mà!”. Nó nói tiếp: “Con ma đêm qua là giả, do lũ nhóc làng bên bày trò!”. Nghe xong, tôi bực tức ném muỗng xuống bàn: “Mẹ nó! Cái lũ trời đánh! Mình có thù gì mà chơi ác vậy? Được rồi, tao sẽ trả thù cho cả đám!”.<br><br>
+
+Đêm xuống, gánh hát tiếp tục vở hôm qua. Lần này, bọn tôi nhịn đói, trốn nhà từ chiều để ra khu mộ. Mọi thứ đã chuẩn bị: thằng Toàn trộm tóc giả của chị nó, thằng Bình mang áo trắng, tôi mượn hộp phấn của chị Hai. Bọn tôi núp trong khu mộ từ xế chiều đến khi đêm diễn tàn, mọi người về hết. Quả đúng trời không phụ lòng người, hai “con mồi” đã tới.<br><br>
+
+Tôi đội tóc giả, đánh phấn trắng bệch mặt, mặc áo trắng—hoàn chỉnh. Bọn kia không mang đèn pin hay gậy, phải công nhận chúng gan dạ. Nhớ lại đêm qua, chúng cười hả hê còn bọn tôi sợ hãi, chạy thừa sống thiếu chết, tôi tức sôi máu. Tôi leo lên cây xoài trong khu mộ. Hai thằng Bình, Toàn núp hai bên đường, giả tiếng chó tru vang cả không gian. Bọn kia đứng khựng, dáo dác nhìn từ bãi mộ sang đám cỏ bên đường. Lợi dụng chúng không để ý, tôi nhảy toạt xuống. Hai thằng giật bắn, la toán, vùng chạy. Nhưng làm sao chạy được khi tôi nắm chặt áo chúng. Chúng quỳ xuống vái lạy: “Con lạy ngài ma, cô ma tha cho con! Con lỡ dại, tha cho con! Con thề không quấy nhiễu nữa!”. Tôi buông tay, cười hả hê. Hai thằng chạy té khói, vừa hét vừa chạy.<br><br>
+
+Tôi đi ra hỏi Bình, Toàn: “Sao? Hai thằng mày vừa lòng chưa? Tao đủ trình đóng tuồng chưa? Haha!”. Chả nghe tiếng trả lời. Tôi hỏi lớn lần nữa, nhưng chỉ có sự im lặng đáng sợ. Nghĩ chắc tụi nó bị muỗi đốt nên về sớm, tôi hớn hở vì trả thù thành công. Tôi chạy lại giếng trong khu mộ, soi mình xuống ngắm thành quả. Không ngờ mình hóa trang tài tình đến mức nhìn xuống giếng, tôi còn thót tim, huống chi bọn kia.<br><br>
+
+Nhanh chân chạy về làng, tôi chui qua khe cửa, leo lên giường, đánh một giấc tới sáng.<br><br>
+
+Sáng hôm sau, tôi chạy sang nhà Bình và Toàn kể lại cảnh tượng. Đến nơi, thấy bố mẹ chúng ngồi trên giường khóc thảm thiết. Tôi hỏi: “Cô Năm Hồng ơi, có chuyện gì mà cô chú khóc dữ vậy? Thằng Toàn với Bình đâu?”. Cô nấc lên: “Cô khóc vì chúng nó! Trốn đi từ đêm qua, đến giờ chưa về. Biết tìm đâu bây giờ!”. Nghe đến đây, tôi giật bắn, chạy về nhà, lo âu và sợ hãi đè nặng.<br><br>
+
+Ngồi trên giường, tôi sực nhớ cái giếng trong nghĩa địa. Tôi chạy ra hỏi bà. Bà bảo cái giếng đó có từ lâu, từng có cô gái trẻ tự tử vì bị cha mẹ đuổi do mang thai ngoài ý muốn. Chả ai dám bén mảng đến, mà giếng cũng chẳng có nước, dù mưa lớn cỡ nào. Đầu óc tôi quay cuồng, tay chân bủn rủn. Nhớ lại khuôn mặt dưới giếng đêm qua, tôi khuỵu xuống, mồ hôi rơi thấm đất, mọi thứ trước mắt mờ nhòe.<br><br>
+
+Chưa kịp thốt lên, nhà cô Năm Hồng xôn xao. Tôi chạy vọt qua, đập vào mắt không phải hình ảnh Bình, Toàn chơi ô ăn quan như mọi ngày, mà là máu. Hai đứa đã chết, mặt trắng bệch, nước dãi chảy dài, mắt trợn ngược, tay chân đầy vết trầy xước, cắt sâu vào da thịt. Ba người trong nhóm tìm kiếm bảo thấy chúng nằm trong bụi tre, miệng đầy đất cát, khó khăn lắm mới lôi ra, mà không hiểu sao chúng chui vào được khe hẹp ấy. Mẹ chúng ôm xác, khóc ai oán, làm cả làng chết lặng. Cha chúng rờ lên cổ, thấy vết cào xước hiện lên chữ mờ: “Người kế tiếp là mày”. Cả làng nhìn nhau, không biết “mày” là ai. Nhưng tôi biết rõ nhất.<br><br>
+
+Đêm nay, gánh hát tiếp tục diễn, tôi bị bắt ở nhà vì tội trốn hai đêm trước. Cả làng đi xem hát, chỉ còn tôi trong căn nhà tối tăm, lạnh lẽo. Tiếng gõ mõ tụng kinh siêu thoát cho Bình và Toàn vang lên. Gió bên ngoài thổi, làm cửa sổ đập chang chát, ngọn nến đang cháy bỗng tắt dở. Kèm theo là tiếng gõ cửa trong đêm, và giọng thì thầm the thé của một người phụ nữ…</p>
+      </div>
+  </div>
+      </div>
+    </div>
+<div class="container comment-section mt-4">
+  <h4 class="mb-3">Bình luận</h4>
+
+  <!-- Form bình luận -->
+  <div id="commentForm" class="mb-4 p-3 rounded shadow-sm bg-light">
+    <div class="mb-2">
+      <input type="text" id="username" class="form-control" placeholder="Tên của bạn">
+    </div>
+    <div class="mb-2">
+      <textarea id="content" class="form-control" rows="3" placeholder="Nhập bình luận..."></textarea>
+    </div>
+    <button id="submitComment" class="btn btn-primary">Gửi bình luận</button>
+  </div>
+
+  <!-- Danh sách bình luận -->
+  <ul id="commentList" class="list-group">
+    <!-- Các bình luận sẽ được thêm vào đây bằng JavaScript -->
+  </ul>
+</div>
+
+  <!-- Modal Đăng nhập/Đăng ký -->
+<div class="modal fade" id="authModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="authTitle">Đăng nhập</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Form Đăng nhập -->
+        <div id="loginForm">
+          <input type="text" id="loginUsername" class="form-control mb-2" placeholder="Tên đăng nhập">
+          <input type="password" id="loginPassword" class="form-control mb-2" placeholder="Mật khẩu">
+          <button class="btn btn-success w-100 mb-2" onclick="handleLogin()">Đăng nhập</button>
+          <p class="text-center">Chưa có tài khoản? <a href="#" onclick="switchToRegister()">Đăng ký</a></p>
+        </div>
+        <!-- Form Đăng ký -->
+        <div id="registerForm" style="display: none;">
+          <input type="text" id="regUsername" class="form-control mb-2" placeholder="Tên đăng nhập">
+          <input type="password" id="regPassword" class="form-control mb-2" placeholder="Mật khẩu">
+          <input type="password" id="regConfirm" class="form-control mb-2" placeholder="Nhập lại mật khẩu">
+          <button class="btn btn-success w-100 mb-2" onclick="handleRegister()">Đăng ký</button>
+          <p class="text-center">Đã có tài khoản? <a href="#" onclick="switchToLogin()">Đăng nhập</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+   <!-- Modal thông tin tài khoản -->
+<div class="modal fade" id="profileModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Thông tin tài khoản</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Màn hình lựa chọn -->
+        <div id="profileOptions" class="text-center">
+          <div class="avatar-container mb-3">
+            <img id="userAvatar" src="../../images/LOGO.png" alt="Avatar" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+            <button id="editAvatarButton" class="btn btn-primary btn-sm edit-avatar-btn" onclick="document.getElementById('avatarUpload').click()">Sửa avatar</button>
+            <input type="file" id="avatarUpload" style="display: none;" accept="image/*" onchange="changeAvatar(this)">
+          </div>
+          <h4 id="profileUsername" class="mb-4">Tên người dùng</h4>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="card option-card" style="cursor: pointer;" onclick="showSection('infoSection')">
+                <div class="card-body">
+                  <i class="bi bi-person-circle fs-3 mb-2"></i>
+                  <h6>Cập nhật thông tin</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card option-card" style="cursor: pointer;" onclick="showSection('passwordSection')">
+                <div class="card-body">
+                  <i class="bi bi-lock-fill fs-3 mb-2"></i>
+                  <h6>Đổi mật khẩu</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card option-card" style="cursor: pointer;" onclick="showSection('savedStoriesSection')">
+                <div class="card-body">
+                  <i class="bi bi-bookmark-fill fs-3 mb-2"></i>
+                  <h6>Truyện đã lưu</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Phần Cập nhật thông tin -->
+        <div id="infoSection" style="display: none;">
+          <div class="d-flex align-items-center mb-3">
+            <button class="btn btn-outline-secondary me-2" onclick="showSection('profileOptions')"><i class="bi bi-arrow-left"></i> Quay lại</button>
+            <h5 class="mb-0">Cập nhật thông tin</h5>
+          </div>
+          <form id="updateInfoForm">
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Họ tên</label>
+              <input type="text" class="form-control" id="fullName" placeholder="Nhập họ tên">
+            </div>
+            <div class="mb-3">
+              <label for="phoneNumber" class="form-label">Số điện thoại</label>
+              <input type="tel" class="form-control" id="phoneNumber" placeholder="Nhập số điện thoại">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Nhập email">
+            </div>
+            <button type="button" class="btn btn-primary w-100" onclick="updateUserInfo()">Cập nhật thông tin</button>
+          </form>
+        </div>
+        <!-- Phần Đổi mật khẩu -->
+        <div id="passwordSection" style="display: none;">
+          <div class="d-flex align-items-center mb-3">
+            <button class="btn btn-outline-secondary me-2" onclick="showSection('profileOptions')"><i class="bi bi-arrow-left"></i> Quay lại</button>
+            <h5 class="mb-0">Đổi mật khẩu</h5>
+          </div>
+          <form id="changePasswordForm">
+            <div class="mb-3">
+              <label for="currentPassword" class="form-label">Mật khẩu hiện tại</label>
+              <input type="password" class="form-control" id="currentPassword">
+            </div>
+            <div class="mb-3">
+              <label for="newPassword" class="form-label">Mật khẩu mới</label>
+              <input type="password" class="form-control" id="newPassword">
+            </div>
+            <div class="mb-3">
+              <label for="confirmNewPassword" class="form-label">Xác nhận mật khẩu mới</label>
+              <input type="password" class="form-control" id="confirmNewPassword">
+            </div>
+            <button type="button" class="btn btn-primary w-100" onclick="changePassword()">Cập nhật mật khẩu</button>
+          </form>
+        </div>
+        <!-- Phần Truyện đã lưu -->
+        <div id="savedStoriesSection" style="display: none;">
+          <div class="d-flex align-items-center mb-3">
+            <button class="btn btn-outline-secondary me-2" onclick="showSection('profileOptions')"><i class="bi bi-arrow-left"></i> Quay lại</button>
+            <h5 class="mb-0">Truyện đã lưu</h5>
+          </div>
+          <div id="savedStoriesList" class="row">
+            <!-- Danh sách truyện sẽ được thêm bằng JavaScript -->
+          </div>
+          <p id="noSavedStories" class="text-center mt-3" style="display: none;">Bạn chưa lưu truyện nào.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" onclick="logout()">Đăng xuất</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="../../JS/audio-player.js"></script>
+
+  <script src="../../JS/cactrang.js"></script>
+</body>
+
+</html>

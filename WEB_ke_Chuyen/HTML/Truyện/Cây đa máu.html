@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đọc Truyện - WebketruyenQ&V</title>
+  
+  <link rel="shortcut icon" href="../../images/LOGO.ico" type="image/x-icon">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../../CSS/trangchu.css">
+  <link rel="stylesheet" href="../../CSS/read.css">
+</head>
+
+<body>
+  <div class="main-content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand ms-3" href="../Trangchu.html">WebketruyenQ&V</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto ms-3">
+          <li class="nav-item">
+            <a class="nav-link" href="../Trangchu.html">Trang chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Truyện mới.html">Truyện Mới</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownTheLoai" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Thể Loại
+            </a>
+             <div class="dropdown-menu" aria-labelledby="dropdownTheLoai">
+              <a class="dropdown-item" href="../Truyện ma.html">Truyện Ma</a>
+              <a class="dropdown-item" href="../Truyện cổ tích.html">Cổ Tích</a>
+              <a class="dropdown-item" href="../Truyện cười.html">Truyện Cười</a>
+              <a class="dropdown-item" href="../Truyện ngôn tình.html">Truyện Ngôn Tình</a>
+              <a class="dropdown-item" href="../Truyện hoạt hình.html">Truyện Hoạt Hình</a>
+              <a class="dropdown-item" href="../Truyện ý nghĩa.html">Truyện Ý Nghĩa</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about.html">Giới thiệu</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center ms-auto me-3 gap-2">
+          <button class="circle-button" id="toggleDark">
+            <i class="bi bi-lightbulb"></i>
+          </button>
+          <!-- Nút đăng nhập hoặc tài khoản -->
+          <button id="authButton" class="btn btn-outline-light ms-2 rounded-pill me-3" data-bs-toggle="modal"
+            data-bs-target="#authModal">
+            Đăng nhập
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Nội dung trang đọc truyện -->
+    <div class="container mt-4">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb-container fade-in">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../Trangchu.html">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="javascript:history.back()">Cây đa máu</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Nội Dung Truyện</li>
+          </ol>
+        </nav>
+      </div>
+
+      <!-- Thanh điều khiển đọc truyện -->
+      <div class="reading-controls d-flex justify-content-between align-items-center">
+        <div class="font-size-control d-flex align-items-center">
+          <button class="btn btn-sm btn-outline-secondary rounded-circle" id="decreaseFont">
+            <i class="bi bi-dash"></i>
+          </button>
+          <span class="font-size-value mx-2" id="currentFontSize">18</span>
+          <button class="btn btn-sm btn-outline-secondary rounded-circle" id="increaseFont">
+            <i class="bi bi-plus"></i>
+          </button>
+        </div>
+        <div class="color-toggle">
+          <button class="btn btn-sm btn-outline-secondary" id="toggleMode">
+            <i class="bi bi-moon"></i> Chế độ đọc
+          </button>
+        </div>
+        <div class="bookmark">
+          
+          <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-volume-up"></i> Nghe</button>
+    
+        </div>
+      </div>
+
+      <!-- Tiêu đề chương -->
+      <div class="chapter-title-container text-center mb-4">
+        <h1 class="story-title">Cây đa máu</h1>
+        <div class="reading-time">Thời gian đọc: khoảng 20 phút</div>
+      </div>
+      <!-- Nội dung truyện -->
+      <div class="story-content fade-in" id="storyContent">
+        <!-- Nội dung truyện sẽ được thêm vào đây -->
+<p>Trước cửa nhà ông phú hộ Giận, mấy hôm nay cứ có bóng người lượn lờ qua lại. Kể từ khi người Pháp đóng cửa kho thóc, chỉ có thể kiếm được lúa gạo nhờ phiếu chẩn mà chính phủ Đông Dương phát cho. Trong nước, lắm người chết, xác chất thành đống nằm la liệt khắp miền thành phố. Kẻ sống thì vạ vật, chẳng khác nào cái xác khô lượn lờ qua lại, hệt như bóng quỷ u linh lẩn khuất trong màn đêm.</p>
+
+<p>Thời buổi này, lương thực khan hiếm. Năm trước, hộ có tiền còn ngẩng cao đầu, hưởng sự sung túc giữa loạn lạc. Nhưng sang năm nay, dù có tiền cũng chẳng mua nổi gạo, tiền vàng để mốc trong nhà mà không dùng được. Phú hộ hay kẻ giàu có, thành ra cũng chẳng khác gì dân đen chân đất mắt toét, lắm khi còn phải tha hương cầu thực hệt như khất dân.<br>
+Nhà ông phú hộ Giận sở dĩ còn trụ được đến giờ, là nhờ mối quan hệ quen biết với quan cai tổng người Pháp.</p>
+
+<p>Phú hộ Giận có con gái là Thị Nhung, nổi tiếng xinh đẹp trong vùng, được nhiều thiếu gia dân chơi Hà Thành để mắt tới. Nhờ đó, ông Giận nhận được nhiều quà cáp và có mối quan hệ rộng với người Pháp, người Nhật để nhận gạo bông.</p>
+
+<p>Nói đến dân tình, kẻ thì thiếu đói nằm vạ vật, kẻ đào củ dại gặm vỏ cây, kẻ há hốc mồm vì đói nằm chờ chết. Ấy vậy mà vẫn có những kẻ của ăn không hết, còn thừa thãi đem cho trâu bò ăn, gạo để lâu sợ mốc thì nấu rượu, đem thóc ra đốt lò nồi hơi nước.<br>
+Nhà phú hộ Giận hưởng cuộc sống sung túc giữa thời buổi cùng cực, trái ngược với bao hoàn cảnh éo le xung quanh, lại còn ác ôn độc địa, chẳng ra tính người.</p>
+
+<p>Nhiều hôm, có người tha thẩn ở cổng nhà, chìa tay xin nắm gạo vãi, mà còn bị phú hộ Giận cho người làm ra đe thẳng tay, cầm gậy gộc nện cho đến chết chỉ vì quấy rầy giấc ngủ trưa của ông ta.<br>
+Cánh người làm của phú hộ Giận, buổi ấy, có tên hầu Lý nổi danh nhất, được ông Giận tin cẩn, cầm đầu bè đảng tay sai, hễ có khất dân làm phiền là đuổi đánh.</p>
+
+<p>Một hôm, hầu Lý trông thấy trước cửa nhà ông phú hộ có một người đàn bà mặt mày nhọ nhem, sắc mặt hốc hác. Gã định chạy ra chửi bới đuổi đi. Nhưng khi đến nơi, gã phát hiện người đàn bà ấy chính là bạn thuở hàn vi bên làng Đào. Nổi lòng thương tình, gã định rìu người đàn bà vào nhà, vụng trộm cho ăn bữa cơm.<br>
+Nhưng trong đầu gã đột nhiên vang lên lời phú hộ Giận: “Thời buổi này, nếu không muốn bị người ta ăn xương uống máu, thì dẫu là bạn bè, tao cũng giết. Mình thương tình nó thì mình cũng chết, cho nó ăn không khác gì đem máu thịt mình ra chiêu đãi. Sống bữa nay bữa mai, biết thế nào mà làm phúc cho thiên hạ, chỉ làm kẻ biếng nhác được dịp hưởng thụ. Lũ sâu mọt thì mục kiếp vẫn là sâu mọt, không thể tồn tại trên đời. Nếu đã được hưởng phước, thì cố giữ lấy, chớ vì phút mủi lòng mà rước họa vào thân…”</em></p>
+
+<p>Lời nói ấy khiến hầu Lý đau đáu trong lòng. Phú hộ Giận là người cưu mang gã, dang tay cứu gã khỏi cái chết trong buổi lầm than. Với hầu Lý, ông Giận chẳng khác cha mẹ, có ơn tái tạo, có triết lý thâm sâu, đầu óc cao hơn bậc trí giả đương thời. Lời ông nói kiểu gì cũng đúng, mà đã đúng thì không nên làm trái, kẻo tự lấy đá đập chân mình, tự moi ruột gan máu thịt cho kẻ khác nhìn thấu, tự đem số phận mình rớt xuống lồng bàn thiên hạ để người mổ xẻ.</p>
+
+<p>Nghĩ đến đó, gã không dám giúp người đàn bà đang nằm dưới đất. Thân gã còn lo chưa xong, nào có thể lo cho bạn. Người đàn bà đôi mắt mơ màng, chỉ còn hơi thở thoi thóp. Cô ta dường như nhìn thấy gã, nhưng không nói được, chỉ có đôi mắt đờ đẫn nhìn gã như cầu xin điều gì đó, một chuyện mà dẫu sắp chết cũng phải làm cho được.</p>
+
+<p>Hầu Lý chẳng nghĩ ngợi thêm, biết người đàn bà chẳng thể đứng dậy nổi. Gã chạy vào nhà tìm cây gậy gỗ mấu rất cứng, đến gần người đàn bà, dùng giọng quyết liệt nói: <br>
+- Thương tình mày là bạn thuở hàn vi, nay thân tao còn chẳng lo nổi, chẳng nghĩ cứu mày. Chỉ còn cách cho mày hưởng ân huệ cuối cùng là chết nhẹ nhõm. Âu cũng là việc tao giúp mày hết nghĩa.</p>
+
+<p>Hầu Lý nói xong, đem gậy gỗ bổ thẳng vào đầu người đàn bà. Người đàn bà rơm rớm nước mắt, bàn tay run run lần xuống bụng như ra ý điều gì. Đôi mắt giàn giụa, lấp lánh cầu xin. Nhưng hầu Lý cắn răng nện gậy xuống thật mạnh. Gậy đập trúng đầu, sọ toác ra, óc bắn tung tóe.<br>
+Bàn tay người đàn bà từ bụng lăn xuống mặt đất, mắt mở to rớm cả nước mắt lẫn máu, miệng há hốc. Hai gò má gầy rọp, cả người như khung xương quằn quại.</p>
+
+<p>Người đàn bà ấy đã chết, chết thật sự. Đó cũng là số phận của những người bần cùng trong xã hội này, phải gồng mình mà sống, cắn vỏ cây, uống nước cầm hơi, đôi khi gặm cả thịt người để đẩy lùi cơn đói. Nỗi kinh hoàng của thời đại đẩy con người vào cõi địa ngục trong kiếp người. Trong sự tra tấn của cơn đói và hình ảnh đầy đọa của thân xác da bọc xương, trong sự yếu ớt run rẩy nhẹ đến gió lay cây cũng đổ, đã hành hạ suy tưởng con người đến tận cùng.</p>
+
+<p>Hầu Lý sát hại người đàn bà, chẳng thèm chôn cất tử tế, chỉ quẳng ra giữa đường cho ruồi bâu, chó gặm, quạ mổ xẻ. Thời buổi này, người chết đầy đường, dù có thấy xác nằm trước cửa nhà phú hộ Giận, cũng chẳng ai quan tâm. Thân còn lo chưa xong, cơm chưa biết có đổ vào mồm hay không, lo chi chuyện thiên hạ.</p>
+
+<p>Nhưng xét về tình nghĩa bạn bè, hầu Lý thật ác độc. Nếu không thể giúp bạn vì miếng ăn, đã hạ cố cho bạn chết êm đẹp, thì cớ gì không chôn cất cho người ta một nấm mồ tạm bợ? Để xác thịt nằm chơ chọi giữa đường, cho chó tha quạ rỉa như vậy. Người làm phúc như thế, chẳng khác đày đọa, còn ác hơn cầm thú.</p>
+
+<p>Thấm thoắt trôi qua mấy tháng. Trước cửa nhà phú hộ Giận, bỗng có một cây đa nhỏ mọc trồi lên. Ban đầu chỉ là mầm nhỏ với hai cái lá, sau cao chừng đứa trẻ, rồi vượt lớn ngang bức tường rào. Phú hộ Giận thấy cây đa mọc trước cửa thì lấy làm lạ, nhưng cũng mừng vì từ nay có bóng cây mát, làm giấc ngủ trưa thêm thoải mái, tránh cái nắng gắt trời hè. Ông ta không chặt cây, để nó mọc.</p>
+
+<p>Lâu dần, qua vài tháng, cây đa lớn nhanh như thổi. Người ta thấy lạ, kể từ khi cây đa xuất hiện, nạn dân không hiểu sao thi nhau tụ tập, hẹn cùng chết đói trước cửa nhà ông ta. Xác chết ngày càng nhiều, mùi thối bốc lên nồng nặc, bay tận cây số vẫn ngửi được.<br>
+Phú hộ Giận nhiều phen sai người dọn xác, canh phòng xung quanh, nhưng tình hình vẫn vậy. Lạ hơn, người chết càng nhiều, cây đa càng lớn nhanh, mới mọc hơn một năm mà to ngang cây nhãn.</p>
+
+<p>Việc này không thoát khỏi mắt phú hộ Giận. Ông ta nhận ra sự liên quan giữa người chết trước cổng, ngay gần cây đa, và việc cây lớn nhanh. Dẫu ngu ngốc cũng đoán được có điều huyền bí tâm linh mà dân ta hay đồn đại.<br>
+Thời buổi này, người ta đi đâu cũng mê tín. Nhà phú hộ Giận, với truyền thống cha truyền con nối là dân thổ cư cường hào, năm nào cũng khói hương ma chay chạy lộc thịnh, đủ biết ông ta tin chuyện tâm linh.</p>
+
+<p>Phú hộ Giận lệnh người làm đốn cây đa. Nhưng quái dị lộ ra: không ai chặt nổi. Người làm mạnh thì gãy tay, làm nhẹ thì búa hỏng cán, dùng trâu bò kéo thì bò lăn ra sùi bọt mép mà chết.<br>
+Những sự lạ khiến phú hộ Giận kinh sợ. Có đêm, ông mơ thấy bóng người ngồi vắt vẻo trên cây đa, nhe răng trắng nhởn nhìn vào chõng ông nằm, cười ghê rợn.</p>
+
+<p>Hôm trời sáng trăng, đằng sau tán lá, phú hộ Giận cảm giác có bóng người rung rinh qua lại. Sai người làm ra thét đuổi, chẳng thấy ai, rõ là kỳ dị.<br>
+Gần đây nhất, người ta chặt thân cây đa, thấy nhựa đỏ tươi như máu rỉ ra. Người mê tín nói đa hóa thành tinh, do người chết tụ tập mà thành. Người biết chút khoa học cho rằng đó là loài đa máu, hiếm gặp trong tự nhiên, chẳng phải ma quỷ.</p>
+
+<p>Việc triệt hạ cây đa không thành khiến phú hộ Giận ăn không ngon, ngủ không yên, mong tìm mọi cách giải quyết êm đẹp.<br>
+Trong số thiếu gia Hà Thành theo đuổi Thị Nhung, có anh sinh viên đại học Đông Dương tên Khánh, con một quan lớn làm cho người Pháp. Lần này, anh ta về chơi tại nhà phú hộ Giận mấy hôm.</p>
+
+<p>Trùng hợp vào tháng cô hồn, người ta có tục cúng thị thực cho Ngạ Quỷ vào rằm tháng bảy. Khánh được phú hộ Giận tiếp đón. Trong cuộc trò chuyện, ông Giận tươi cười hỏi: <br>
+- Cậu Khánh là người Hà Thành, chắc tân tiến âu hóa lắm, có quen lệ cúng rằm tháng bảy không?</p>
+
+<p>Khánh đáp: <br>
+- Thưa ông, tôi tuy là sinh viên âu hóa, nhưng tục người Việt tôi hiểu rõ. Cúng cô hồn chỉ là hủ tục, dành cho kẻ thừa của, đem đồ đổ bỏ. Dẫu vậy, đó cũng là thú chơi ngông của người có tiền, có quyền. Giả như ông làm việc ấy, chỉ để thêu gấm trên hoa cho các quan chú ý. Tôi nói vậy, mong ông đừng giận.</p>
+
+<p>Phú hộ Giận thấy Khánh ví von ý chửi mình ngu dốt, không giận mà gật gù khen: <br>
+- Sinh viên đại học có khác, quả thật suy nghĩ sâu sắc.</p>
+
+<p>Ông dừng lại, chau mày hỏi: <br>
+- Nhưng nếu cậu không tin cúng cô hồn có tác dụng, hẳn cậu cũng tin trên đời có ma quỷ, và chúng sẽ quay lại trả thù khi có dịp?</p>
+
+<p>Khánh lắc đầu, cười nhạt, ngông nghênh nói: <br>
+- Ma quỷ ư? Trong tư duy khoa học hiện đại, đó chỉ là thói hủ lậu mê tín của dân đen. Ông là người sang trọng, tôi khuyên đừng tự hạ thấp mình giống bọn họ, tin vào chuyện vô căn cứ như thế chẳng giống người tôn quý.</p>
+
+<p>Nói chuyện dài, phú hộ Giận thấy Khánh tự cao tự đại, không biết trời cao đất dày. Dẫu vậy, ông không giận, mà vui mừng hỏi: <br>
+- Nếu cậu không tin có ma quỷ, cậu dám cá cược với tôi không? Một cuộc cá cược xem trên đời có ma quỷ thật không?</p>
+
+<p>Khánh gật đầu: <br>
+- Có gì không dám? Tôi chắc ông sẽ thua. Nhưng nếu cá cược, vật phẩm phải lớn.</p>
+
+<p>Phú hộ Giận hai mắt sáng quắc hỏi: <br>
+- Lớn là thế nào? Cậu muốn gì?</p>
+
+<p>Khánh đáp: <br>
+- Ông biết tôi muốn gì. Tôi muốn cô Nhung làm vợ. Nếu ông đồng ý, cuộc cá cược này sẽ rất ý nghĩa.</p>
+
+<p>Phú hộ Giận híp mắt. Thị Nhung từ lâu là miếng mồi ngon cho các thiếu gia Hà Thành. Khánh về đây cũng chỉ để tán tỉnh cô và rước về làm vợ, khiến kẻ khác ghen tức.<br>
+Khánh không tin hồn ma tồn tại. Gã nghĩ, nếu vì chuyện không có thật mà lừa được con gái phú hộ, chẳng phải dễ dàng có lãi sao? Phú hộ Giận tự nêu cá cược, gã không để vuột cơ hội tóm thóp lão, cướp Thị Nhung, khiến các thiếu gia Hà Thành lác mắt.</p>
+
+<p>Nghe điều kiện, phú hộ Giận không lạ, mà đắc ý. Cây đa máu trước nhà khiến lão đau đầu. Nếu giải quyết được dễ dàng, lão nhất định làm.<br>
+Nghĩ lại nhiều phen trước, lão dùng đủ cách không thành. Lão tính, người có học thức như Khánh sẽ giải quyết khác, hiệu quả hơn. Người có học thức ở tầng lớp chiếu trên, suy nghĩ cao hơn, cách giải quyết khác biệt.</p>
+
+<p>Phú hộ Giận xuôi lòng, nhưng làm bộ nghiêm cẩn để ngã giá. Khánh thấy vậy nóng lòng, sợ ông đổi ý, liền khích bác: <br>
+- Nếu ông sợ thua, chỉ cần nói một tiếng. Tôi không vòng vo, ghét kẻ nhát sợ thua mà hay mạnh mồm. Chỉ tiếc chuyến đi này không thú vị.</p>
+
+<p>Phú hộ Giận làm bộ nóng nảy: <br>
+- Tôi đâu phải người như thế. Tôi đồng ý, nhưng nếu cậu thua, cậu phải mất số tiền lớn, hoặc giúp tôi một chân nghị viên trên tỉnh. Đó là điều kiện của tôi, cậu dám không?</p>
+
+<p>Khánh thấy ông Giận tức tối, nhận định ông mắc sai lầm vì chột dạ. Cơ hội trời cho, gã cười khanh khách: <br>
+- Điều kiện không khó, bố tôi lo được. Nhưng tôi e ông nuốt lời. Chúng ta phải làm giao ước.</p>
+
+<p>Phú hộ Giận chống gậy, nheo mắt hỏi: <br>
+- Giao ước thế nào? Cần gì viết lại cho mệt?</p>
+
+<p>Khánh lắc đầu: <br>
+- Không, ông nổi tiếng nuốt lời, tôi không làm trái được. Người có học thích làm việc trên giấy tờ, không quen hứa miệng.</p>
+
+<p>Phú hộ Giận đồng tình, quát: <br>
+- Thằng Lý đâu, cầm giấy bút lên đây!</p>
+
+<p>Lý vội chạy lên, mang giấy ngà và bút mực máy Tây. Khánh ghi nhoay nhoáy, trình giao ước cho phú hộ Giận: <br>
+- Ông xem giao ước này đủ chưa? Nếu sai, tôi sửa, rồi hai ta ký.</p>
+
+<p>Phú hộ Giận gật gù, tay run cầm giao ước, dí sát mặt nhìn kỹ, giả bộ nghiêm cẩn. Kỳ thực, lão muốn ký ngay, nhưng chậm lại để Khánh nghĩ lão đắn đo, rằng Khánh được lợi chứ không phải lão.<br>
+Lão là người trong cuộc, biết cây đa khó nhằn. Người ta càng thấy đối phương đồng ý dễ, càng nghi ngờ. Phú hộ Giận muốn đóng kịch tốt, lừa con cừu non học thức này vào bẫy của cáo già.</p>
+
+<p>Phú hộ Giận câu giờ, rồi nói: <br>
+- Điều kiện đúng rồi, nhưng cậu chưa biết tôi muốn cá cược gì.</p>
+
+<p>Khánh đắc ý: <br>
+- Việc ấy không quan trọng, quan trọng là điều kiện thuận cả hai. Ông muốn tôi chứng minh ma quỷ không tồn tại thế nào là việc của ông. Kiểu gì tôi chẳng thắng, và ông sẽ thành bố vợ bất đắc dĩ của tôi.</p>
+
+<p>Phú hộ Giận giả bộ giận tím mặt: <br>
+- Tôi sẽ cho cậu biết đây không phải trò đùa. Tôi kể sơ sự việc, nhưng cậu viết vào giao ước.</p>
+
+<p>Khánh gật gù: <br>
+- Được, ông nói đi. Tôi nóng lòng lắm rồi. Điều gì khiến ông đánh đổi con gái?</p>
+
+<p>Phú hộ Giận, mặt đăm chiêu, kể về cây đa và nạn dân kéo đến chết ở gốc cây. Khánh nghe không sợ, mà bật cười, đúng như phú hộ Giận đoán, vì Khánh tự cao, chẳng để chuyện này trong lòng.</p>
+
+<p>Khánh ghi tường tận cá cược vào giao ước, ký phắt một chữ, đưa cho phú hộ Giận: <br>
+- Đến lượt ông, ký đi.</p>
+
+<p>Phú hộ Giận ký ngay. Khánh xem lại giao ước, đặt vào hộp, khóa kín: <br>
+- Điều kiện xong, chúng ta đặt giao ước vào hộp, khóa lại. Đợi ngã ngũ mới mở làm chứng. Hộp này để đây, tôi tin nó an toàn.</p>
+
+<p>Khánh cười hỏi: <br>
+- Tôi không ngờ ông vì việc vô lý mà đánh cược con gái. Ông thèm chức nghị viên đến phát điên sao? Chức ấy tốn nghìn đồng Đông Dương, lẽ nào ông dùng chuyện vớ vẩn này để đổi?</p>
+
+<p>Phú hộ Giận ngửa bài, cười khanh khách: <br>
+- Rồi cậu sẽ biết, cậu vừa ném tiền qua cửa sổ. Cứ chờ, sẽ biết việc này khó thế nào.</p>
+
+<p>Khánh chột dạ, nhưng hối hận không kịp, đã ký giao ước. Gã nghĩ lại vẻ mặt phú hộ Giận, nhận ra không phải gã khích bác lão mắc mưu, mà chính gã là con cá trong rọ. Giao ước do gã đề xuất, gã tự đưa mình vào tròng.</p>
+
+<p>Ngày hôm sau, Khánh ngủ ở phòng phía tây, gần cây đa máu. Ngoài Thị Nhung, chỉ có hầu Lý qua lại với gã. Thỉnh thoảng, Khánh thấy hầu Lý chạy ra vào, tiếng huyên náo. Gã phát hiện hầu Lý thấm đẫm máu, bã trắng bám đầy quần áo. Sau này, gã biết máu là của nạn dân bị hầu Lý và bọn hầu đánh chết, bã trắng là óc của họ.</p>
+
+<p>Khánh thất thần tưởng tượng cảnh đám hầu đánh chết người. Bất chợt, tiếng thưa lễ phép vang lên: <br>
+- Dạ con chào cậu Khánh ạ...</p>
+
+<p>Khánh tỉnh lại, thấy hầu Lý. Gã toan đáp, nhưng hầu Lý chặn họng: <br>
+- Thưa cậu, ông phú hộ bảo con từ giờ hầu hạ cậu. Cậu cần gì, con chuẩn bị.</p>
+
+<p>Khánh nhìn hầu Lý, gật gù: <br>
+- Được, lại việc chặt cây chứ gì. Dù sao tao cũng chơi ở đây ít lâu, vụ cá cược sớm muộn phải làm. Ông phú hộ giục khéo tao.</p>
+
+<p>Khánh đi qua lại, nhìn chằm chằm hầu Lý, hỏi: <br>
+- Tao nghe ông phú hộ nói, cây đa ấy có lắm sự lạ?</p>
+
+<p>Hầu Lý ngơ ngẩn, đáp: <br>
+- Thưa cậu, lạ thế nào con không biết. Nhưng cây đa ngoài việc kéo nạn dân đến chết, còn... hút máu...</p>
+
+<p>Hầu Lý lắp bắp, toát mồ hôi, kể tiếp: <br>
+- Hôm trước, thằng hầu tên Khánh đi giết nạn dân nửa đêm theo lệnh ông phú hộ. Đêm ấy nó không về. Sáng sớm, con thấy xác nó chết khô dưới chân cây đa. Trên cây có quả đa to cỡ đầu người, nhìn hệt mặt thằng hầu Khánh, miệng há hốc như xác nó.</p>
+
+<p>Khánh nghe, ban đầu gai người, nhưng bật cười, giận tím mặt: <br>
+- Ông phú hộ khinh người quá, bịa chuyện sai mày dọa tao để thắng cược. Còn bịa tên thằng hầu là tên tao, đúng là không liêm sỉ. Rủa tao chết như nó, phải không?</p>
+
+<p>Hầu Lý bị quát, run không dám hé răng. Nửa phút sau, Khánh nói: <br>
+- Nếu ông phú hộ sốt ruột thế, đêm nay tao sẽ chặt cây vào nửa đêm, xem ông ấy còn nói xằng bậy được không. Ma quỷ à? Chúng mày sợ ma quỷ ban đêm nhất, đúng không? Tao sẽ chặt cây ban đêm cho xem.</p>
+
+<p>Khánh đuổi hầu Lý ra, đóng cửa, dặn không cho ai làm phiền, đợi nửa đêm mới được thưa chuyện.<br>
+Hầu Lý kể lại cho phú hộ Giận. Ông vuốt râu, gật gù vui sướng: <br>
+- Chà, nếu cậu Khánh nóng nảy thế, chẳng mấy nữa ông mày lên tỉnh làm nghị viên. Mày trông chừng cậu Khánh cẩn thận. Nếu cậu ấy không chặt được cây, phải khuyên can kịp lúc, kẻo cây hại thì phúc không đến, họa sát thân hỏi thăm.</p>
+
+<p>Hầu Lý không hiểu, hỏi: <br>
+- Sao họa sát thân hỏi thăm? Con tưởng cậu Khánh thua, ông phải vui?</p>
+
+<p>Phú hộ Giận trợn mắt: <br>
+- Đầu óc tôi đòi! Nếu cậu Khánh xảy ra chuyện như thằng hầu trước, quan trên còn cho ông yên ổn nhậm chức? Phải cho cậu ấy thua tâm phục khẩu phục. Vậy tao vừa lên quan, vừa thoát cây đa ma quái, tránh thù với quan tỉnh.</p>
+
+<p>Hầu Lý hiểu ra, bợ đỡ: <br>
+- Ông suy nghĩ thấu đáo, con hiểu.</p>
+
+<p>Tối đó, đúng canh ba, Khánh gọi hầu Lý. Gã giao việc: <br>
+- Đêm nay tao đích thân chặt cây đa cho ông phú hộ. Mày và mấy đứa hầu chứng kiến, rằng tao chặt cây, để ông không nuốt lời.</p>
+
+<p>Hầu Lý vâng dạ. Khánh sai mang cưa, xẻng, dao, búa, rìu, mọi thứ chặt được cây. Khi hầu Lý mang đủ, Khánh xắn tay áo, nghênh ngang ra cổng, đến trước cây đa, làm bộ chuẩn bị chặt để ông phú hộ lác mắt, hối hận vì cá cược ngu dốt.</p>
+
+<p>Đứng sau Khánh là hầu Lý và hai tên hầu, chắp tay nghiêm cẩn. Hầu Lý ngước mắt xem Khánh hành động, nhưng hồi lâu thấy gã trân trối nhìn cây, chẳng động tay, liền hỏi: <br>
+- Thưa cậu, sao cậu chưa chặt cây?</p>
+
+<p>Khánh run, lau mồ hôi, quay lại hỏi: <br>
+- Nhà ông phú hộ có hầu gái không?</p>
+
+<p>Hầu Lý đáp: <br>
+- Ngoài bà Mão nuôi cô Nhung từ nhỏ, nhà không có hầu gái. Cậu hỏi thế là sao?</p>
+
+<p>Khánh ghé tai hầu Lý, nói khẽ: <br>
+- Vậy người ngồi trên cây đa là bà Mão? Sao mày không gọi bà ta xuống? Bà ta ngồi vắt vẻo thế, tao chặt cây, cây gãy, bà ta khó toàn mạng.</p>
+
+<p>Hầu Lý biết Khánh gặp chuyện, nghĩ đó là ma, vì bà Mão già yếu, không trèo cây được, lại luôn ngủ với cô Nhung. Khánh biết gặp ma, nhưng sống chết không tin, khẳng định đó là bà Mão, cố hối hầu Lý gọi bóng người trên cây xuống.</p>
+
+<p>Hầu Lý run, bước vài bước, quay lại quỳ van nài: <br>
+- Lạy cậu, đó không thể là bà Mão. Bà ấy đang ở với cô Nhung, đó là ma. Cậu thương con, đừng xui con đi.</p>
+
+<p>Khánh đi lại, cố gan dạ, giận dữ: <br>
+- Nếu mày không nghe, tao sẽ chặt cây, mặc mụ ngồi trên đó. Ngã chết, đừng oán than.</p>
+
+<p>Khánh cầm rìu, giơ cao. Bất chợt trời chuyển giông tố, gió mưa bão bùng, sấm chớp đùng đoàng. Tay gã đưa qua vai, một tiếng sét nổ mạnh. Ánh chớp chiếu sáng, hiện rõ khuôn mặt bà già trên cây: nhăn nheo, môi đỏ như máu, răng trắng như ngà.<br>
+Bà ta kêu âm ỉ như bị gặm nhấm trong bụng, mắt phát âm thanh lục bục, con ngươi thò ra thụt vào. Khánh rùng mình, suýt đánh rơi rìu.</p>
+
+<p>Hầu Lý nhìn lên, ruột gan bủn rủn, lắp bắp: <br>
+- Bà Mão... sao bà... lại...</p>
+
+<p>Khánh sợ, toan chạy trốn, nhưng nghe hầu Lý nhắc tên bà Mão, nghĩ là người, không phải ma, nên hết sợ, đứng yên quan sát.<br>
+Khánh không muốn sự thất thố bị đám hầu biết, quyết tâm đốn cây để chứng minh mình đúng, làm hầu Lý, phú hộ Giận sáng mắt: <br>
+- Tao đã nói không có ma quỷ. Mày không gọi bà ta xuống, bà ta ngã chết, không trách tao.</p>
+
+<p>Khánh vung rìu chặt vào cây đa. Cây to bằng nhãn, gặp nhát rìu rung rinh. Bà già bật cười the thé, bò thoăn thoắt từ ngọn cây xuống gần Khánh. Khánh giật mình, suýt rơi rìu, nhưng câu nói của hầu Lý khiến gã khẳng định bà ta là người, chờ bà ta xuống gốc cây sẽ giết ngay.</p>
+
+<p>Người đàn bà khô quắt, da nhăn nheo như củi khô, giống mụ yêu tinh trong rừng. Dẫu là ma quỷ, gặp kẻ ác vẫn phải bái hạ phong, vì oan hồn cô hồn đều do kẻ ác tạo ra. Trong lòng Khánh nổi ác tâm, giơ rìu làm vẻ chặt cây, nhưng chờ bà ta xuống để chém chết.</p>
+
+<p>Bà ta bò nhanh như chuột, đu vắt vẻo như khỉ, cổ rụt như rùa, mặt bạnh như bánh bao, miệng chảy rãi như hổ đói. Tay nhún nhảy, từ ngọn cây nhảy xuống gốc, lao tới bóp cổ Khánh.<br>
+Khánh quát: <br>
+- Con mụ già, chết đi!</p>
+
+<p>Gã xoay rìu bổ ngược về phía bà ta. Đầu bà ta bay, lăn lông lốc trước mặt hầu Lý. Hầu Lý trợn mắt, kinh sợ chết ngất.<br>
+Khánh chặt đầu bà ta xong, quay sang bổ rìu vào cây đa, chặt hùng hục. Cây chẳng trụ lâu, độ nén hương đã siêu vẹo, đổ rạp xuống đất.</p>
+
+<p>Xong chuyện, Khánh ngồi thở dốc, chống rìu, trợn mắt quát: <br>
+- Giờ ông phú hộ Giận phải gả cô Nhung cho tao, chẳng được lợi lộc gì từ tao cả.</p>
+
+<p>Gã đứng dậy, đi vào buồng nghỉ mất dạng. Hầu Lý nhìn Khánh ướt đẫm máu từ xác bà Mão, tặc lưỡi, nhìn xác bà Mão, thở dài: <br>
+- Bà Mão chết rồi, ai chăm nom cô Nhung? Lại phải thuê hầu gái mới.</p>
+
+<p>Hầu Lý nhìn cây đa đổ, nói: <br>
+- Việc nếu đơn giản thế, ông phú hộ chẳng dám cá cược. Cậu Khánh công toi thôi.</p>
+
+<p>Hắn đi mất. Hai lão hầu già ngơ ngẩn, không hiểu chuyện, nhìn xác bà Mão. Họ khiêng xác quẳng vào bụi cây, đầu bà đá qua một bên cho khuất mắt.<br>
+Hành động ấy vô nhân đạo, nhưng suy cho cùng, nếu mai họ rơi vào cảnh ấy, có người dọn xác tránh trâu dày ngựa xéo, cũng là may mắn.</p>
+
+<p>Sáng hôm sau, Khánh trải chuốt gọn gàng, lên gian nhà trên gặp phú hộ Giận, đắc ý. Ông Giận ngồi sẵn trên sập gỗ, mặt thất thần. Thấy Khánh hớn hở, ông thêm âu sầu.<br>
+Khánh thấy ông ủ rũ, càng chắc thắng, giọng miệt thị: <br>
+- Ông buồn bực vì thua cược? Tôi đã nói người không đầu óc làm chuyện ngu xuẩn. Được ông tặng con gái làm lẽ, cũng khiến tôi vui mừng...</p>
+
+<p>Phú hộ Giận, mặt âm trầm, hỏi lại: <br>
+- Cậu nói cái gì? Lẽ là thế nào?</p>
+
+<p>Khánh ngồi xuống, uống chén trà, lộ bản chất đểu giả: <br>
+- Ông không biết sao? Ở Hà Thành, ai chẳng biết cậu Khánh Đại đã có gia đình?</p>
+
+<p>Phú hộ Giận suýt ngã vì tức. Ông không nắm rõ chuyện ngoài xứ, tin đại học Đông Dương danh giá, người âu hóa chỉ một vợ một chồng. Không ngờ Khánh là kẻ như thế.<br>
+Khánh đắc ý chưa lâu, phú hộ Giận cười vang: <br>
+- Cậu chưa thắng đâu.</p>
+
+<p>Khánh cười: <br>
+- Ông định nuốt lời? Nghĩ tôi để giao ước ở chỗ ông, nên trở mặt?</p>
+
+<p>Gã rút từ túi áo tờ giao ước giống hệt bản đã ký. Phú hộ Giận trợn mắt: <br>
+- Cậu lấy giao ước từ khi nào?</p>
+
+<p>Khánh đáp: <br>
+- Ông buồn cười thật. Tôi không tin ông, sao giao thứ quan trọng cho ông cất? Người Tây có ảo thuật, đánh lừa mắt. Ông thấy tôi đút vào hộp, thật ra tôi đút vào túi áo!</p>
+
+<p>Khánh chờ nét mặt giận dữ của phú hộ Giận, nhưng ông vuốt râu: <br>
+- Suýt nữa tôi bị cậu lừa hai lần. Nhưng cậu vẫn thua, dù giao ước ở tay ai.</p>
+
+<p>Khánh đáp: <br>
+- Ông giận quá hóa mất khôn, nói đùa rồi. Cây đã bị tôi chặt, lũ hầu tận mắt chứng kiến. Cây nằm chỏng trơ giữa đường, là vật chứng.</p>
+
+<p>Phú hộ Giận vuốt râu, hỏi: <br>
+- Cậu cho rằng cây nằm giữa đường thật?</p>
+
+<p>Khánh không nhịn được, lôi phú hộ Giận ra cổng. Tới nơi, gã thấy cây đa vẫn ở đó, xanh tốt hơn hôm qua, trên thân mọc mặt người giống bà Mão. Khánh mồ hôi ướt đẫm, lắp bắp: <br>
+- Sao lại thế? Chính tay tôi đốn nó đêm qua. Ông hỏi lũ hầu, chúng trông thấy.</p>
+
+<p>Phú hộ Giận giả bộ hiếu kỳ: <br>
+- Bọn hầu thấy cả? Gọi chúng đến tôi hỏi.</p>
+
+<p>Khánh gọi ba tên hầu đối chất. Cả ba bẻ ngược sự thật: <br>
+- Thưa ông, bọn con không thấy gì. Chắc cậu Khánh ngủ mơ.<br>
+- Đêm qua con không ra khỏi phòng, không biết gì.<br>
+- Cậu Khánh dặn không làm phiền, nửa đêm không gọi.</p>
+
+<p>Phú hộ Giận gật gù, vỗ vai Khánh: <br>
+- Cậu ngủ mơ mà tưởng thật. Cậu không tin ma quỷ, tôi chỉ giải thích thế cho dễ hiểu. Cám ơn cậu chia sẻ gia cảnh, tôi tính cho cậu và con Nhung tìm hiểu. Nhưng chuyện tới nước này, con Nhung không đủ đức hạnh làm vợ cậu...</p>
+
+<p>Khánh thở gấp, tức đến hộc máu, nặn nụ cười: <br>
+- Tôi mưu toan không bằng ông. Nhưng ông lầm, giao ước chưa xong.</p>
+
+<p>Phú hộ Giận nheo mắt: <br>
+- Ý gì?</p>
+
+<p>Khánh đáp: <br>
+- Giao ước không có thời gian cụ thể, khi nào tôi triệt hạ cây đa.</p>
+
+<p>Phú hộ Giận gật gù: <br>
+- Ra vậy. Cậu lách luật để trốn thua, không cho tôi chức nghị viên. Người có học, tính toán khác người, tôi theo không kịp.</p>
+
+<p>Khánh lắc đầu: <br>
+- Ông hiểu lầm. Tôi không nuốt lời như ông. Tôi nói rước cô Nhung làm lẽ, tôi sẽ làm.</p>
+
+<p>Khánh nhấn mạnh “làm lẽ” để chọc giận, nhưng phú hộ Giận cười vang: <br>
+- Được, nhưng cậu nhanh lên. Qua lần này, tôi rút kinh nghiệm. Vụ cá cược sau, tôi không để sơ hở. Con Nhung sớm muộn được gả, hoặc tôi lên nghị viên, giao ước chẳng còn tác dụng.</p>
+
+<p>Khánh âm trầm, không nói, rời nhà phú hộ Giận. Ông nghĩ duyên với chàng rể hụt đến đây là hết, lời Khánh chỉ là nhất thời, nói cho sướng miệng.<br>
+Nhưng Khánh quay lại, dẫn theo ngài Frédéric, quan tuần Tây, và xe kéo lớn.</p>
+
+<p>Phú hộ Giận tiếp đón. Khánh giới thiệu: <br>
+- Đây là ngài Frédéric, quan tuần phủ công sứ. Tôi mời tới, đem xe kéo triệt hạ cây đa.</p>
+
+<p>Phú hộ Giận chào hỏi, gọi người làm: <br>
+- Mang thuốc nước lên mời quan Tây!</p>
+
+<p>Một phụ nữ đáp: <br>
+- Con lên ngay, thưa ông.</p>
+
+<p>Người phụ nữ trẻ, da ngăm, xinh đẹp bước vào. Khánh và quan Tây nuốt nước dãi. Khánh hỏi: <br>
+- Người này là ai, mang trà nước mời chúng tôi?</p>
+
+<p>Phú hộ Giận đáp: <br>
+- Nhờ phúc cậu. Nửa tháng trước, cậu chặt đầu bà Mão, đất còn vương máu. Con Nhung một mình, mẹ mất sớm, không có bàn tay đàn bà hầu hạ, lẽ nào để thằng Lý hầu?</p>
+
+<p>Khánh cười: <br>
+- Ra vậy, tôi tưởng em họ cô Nhung.</p>
+
+<p>Phú hộ Giận vuốt râu: <br>
+- Nếu cậu ưng con hầu, rước nó về. Vụ cá cược xong, tôi chẳng đòi gì.</p>
+
+<p>Khánh ôn tồn: <br>
+- Ông hay đùa, đem con hầu đổi tiểu thư, ai làm chuyện lỗ vốn?<br>
+- Lần này, tôi mời ngài Frédéric, cho ông sáng mắt. Ngài ấy đem xe máy kéo. Buộc dây vào cây đa, xe kéo chạy, nhổ tận gốc. Đến lúc ấy, ông đừng chối cãi.</p>
+
+<p>Phú hộ Giận hỏi: <br>
+- Bao giờ cậu làm chuyện ấy?</p>
+
+<p>Khánh đáp: <br>
+- Ngay bây giờ. Xe sẵn sàng, ngài Frédéric chỉ rảnh sáng nay. Người ta là quan lớn, không như dân thường.</p>
+
+<p>Phú hộ Giận biết xe Tây kéo khỏe, lôi cả tảng đá. Nhưng lo cây đa ma quái xuất hiện lại sau khi đổ. Đám hầu xác nhận Khánh chặt được cây, nhưng ông không tin vì không tận mắt thấy. Nếu cây xuất hiện lại, ông lỗ nặng, quan lộ cũng tiêu.<br>
+Nhưng ông nghĩ, nếu Thị Nhung rơi vào tay Khánh, cũng tốt. Khánh có mối quan hệ rộng, nhan sắc Thị Nhung chẳng mấy mà vợ lẽ thành vợ chính. Người âu hóa ly dị như cơm bữa, hợp thì tiến, không hợp thì bỏ.</p>
+
+<p>Phú hộ Giận đồng thuận cho Khánh mắc xe kéo cây đa. Sáng hôm ấy, trước nhà phú hộ Giận, người huyên náo đông. Nhiều người trong tỉnh xem kéo cây.<br>
+Cây đa mọc một năm, to bằng cổ thụ đầu làng, lá đỏ vàng như mùa thu, dù đang hè tháng tám.</p>
+
+<p>Dây thừng cột chắc vào móc xe và thân cây. Sau lưng phú hộ Giận là ba người hầu, Thị Nhung, và hầu gái.<br>
+Từ khi đồng ý kéo cây, phú hộ Giận bồn chồn, Thị Nhung cũng nóng ruột, không ngồi yên, hối hầu gái ra xem kéo cây khuây khỏa.</p>
+
+<p>Xe tải nổ máy, cây đa nghiêng xiêu, nhưng bám trụ như người khổng lồ. Frédéric nhấn ga, lốp xe bốc khói. Khánh sốt ruột, nắm chặt tay mong thành công.<br>
+Người quyền quý tụ tập xem sự lạ, nạn dân cũng kéo đến như quỷ đói chờ mồi. Cây càng nghiêng, nạn dân càng có sinh lực, đứng thẳng, mắt sáng, lẩm bẩm van lơn, như thấy ánh sáng.</p>
+
+<p>Phú hộ Giận, Frédéric, Khánh mong cây đổ để mưu toan thành sự thật. Nạn dân cũng mong cây sụp, như sự tái sinh, niềm hy vọng mới.<br>
+Sau lưng Thị Nhung, hầu gái im lặng, bất ngờ túm tóc cô, thì thầm: <br>
+- Lũ bán nước cầu vinh, cường hào bóc lột, uống máu ăn xương dân tộc. Giờ đèn cạn lửa tắt của chúng mày.</p>
+
+<p>Thị Nhung hét thất thanh, định quay lại, nhưng hầu gái luồn dao qua kẽ tóc, lột tóc cô. Cùng lúc, cây đa đổ sập, kéo bộ rễ vĩ đại. Rễ lớn nhổ bỏ, rễ nhỏ bám đất, chẳng mấy sẽ chết khô.<br>
+Tiếng cây đổ át tiếng Thị Nhung gào, che sự chú ý của Frédéric, Khánh, và phú hộ Giận. Thị Nhung bị hầu gái lột da, mặt bê bết máu, hốc mắt móc loạn, đầu chặt đứt, trả giá như nạn dân bị cha cô đối xử.</p>
+
+<p>Khi phú hộ Giận và Khánh nhìn thấy cảnh thảm khốc, nạn dân hô hào: <br>
+- Đói khổ vì địa chủ cường hào, vùng lên hỡi đồng bào!</p>
+
+<p>Nạn dân hò reo, súng vang. Lính Tây bị túm cổ giết chết. Frédéric lui cui trong xe, bị súng bắn xuyên sọ, chết bất đắc kỳ tử.<br>
+Phú hộ Giận và Khánh hiểu chuyện, nhìn nhau: <br>
+- Phản rồi, phản rồi!</p>
+
+<p>Phú hộ Giận quát hầu Lý và hai lão hầu: <br>
+- Lấy xe ngựa nhanh, ông phải trốn sang làng Tam Đào, dân xứ này phản rồi.</p>
+
+<p>Hầu Lý lạnh lùng đáp: <br>
+- Cách mạng nói, cường hào địa chủ bóc lột, bán nước cầu vinh làm sai vặt cho công sứ, phải bị trừng trị.</p>
+
+<p>Phú hộ Giận quát: <br>
+- Hỗn xược, mày nói linh tinh gì? Còn lằng nhằng, tao cắt lương, cho chúng mày đói rã họng...</p>
+
+<p>Hầu Lý giơ gậy gỗ, trỏ vào mặt phú hộ Giận: <br>
+- Mày cho nó giết bà Mão, còn nhớ tụi tao không? Theo mày, chết cũng chẳng ai chôn...</p>
+
+<p>Hầu Lý và hai lão hầu xông tới, nện gậy vào đầu phú hộ Giận, như lão sai họ đập nạn dân. Họ làm thuần thục, đầu phú hộ Giận nát bét, óc bắn tung tóe. Con chó đói xông vào liếm sạch óc, uống máu ăn thịt kẻ dã tâm cầm thú, đến chó cũng không bằng.</p>
+
+<p>Chỉ còn Khánh trơ mắt nhìn quang cảnh hỗn loạn. Nạn dân nổi lên, tìm người giàu để trút giận.<br>
+Thị Nhung giờ chỉ là thân người đầy máu, bị hầu gái lột da, hở bó cơ, tởm lợm. Cô bò tới chân Khánh, thều thào: <br>
+- Cậu Khánh, cứu em... Em làm vợ lẽ cũng được... cứu em...</p>
+
+<p>Khánh hoảng sợ, đạp đầu Thị Nhung: <br>
+- Cút đi... cô không xứng...</p>
+
+<p>Gã điên loạn, quang cảnh như địa ngục. Hôm qua còn sung túc, hôm nay là thảm cảnh. Gã quay lại, thấy cây đa máu hóa thành khúc xương người, cành lá ngọn rễ đều từ xương người. Hốc đất do rễ nhổ, tràn ngập máu tươi.</p>
+
+<p>Từ xa, người đàn bà khô quắp, da bọc xương xuất hiện, tiến tới hốc đất. Tiếng khóc trẻ con vang ré, kêu khàn như đói khát.<br>
+Khánh vừa nhìn cảnh ấy, bị tiếng thét sau lưng dọa giật nảy. Là hầu Lý, hét thất thanh vì kinh sợ, tự đập gậy vào đầu, sọ óc bắn tung tóe, chết như những kẻ gã giết.</p>
+
+<p>Hầu Lý chết vì biết người đàn bà là bạn thuở hàn vi gã giết. Cô ra ý nhìn bụng, có lý do. Nếu ngày ấy hầu Lý làm khác, liệu có tránh được chuyện này? Một lần cứu đói, ngàn lần cứu đói. Nếu cả xã hội nghĩ thế, còn cảnh uống máu ăn xương dân tộc không? Không ai biết.</p>
+
+<p>Người đàn bà bế đứa trẻ từ hốc đất, đứa trẻ lớn cỡ sáu tuổi. Cô nhìn chằm chằm, hỏi: <br>
+- Con đói chứ? Mẹ con mình đi xin ăn xứ khác nhé? Mẹ còn một người bạn khác chú Lý...</p>
+
+<p>Khánh chôn chân, hiểu ra tất cả. Đầu gã đau nhói, ý thức mơ màng, biến mất. Gã đã chết.<br>
+Cây đa là hình tượng thực dân hút máu ăn xương. Đa quật ngã, như chế độ cường quyền phải sụp đổ. Người đàn bà là hơi thở thời đại, thông báo kết quả từ lựa chọn chúng ta làm. Số phận tồi hay tốt đẹp, đều do ta...</p> </div>
+      </div>
+    </div>
+<div class="container comment-section mt-4">
+  <h4 class="mb-3">Bình luận</h4>
+
+  <!-- Form bình luận -->
+  <div id="commentForm" class="mb-4 p-3 rounded shadow-sm bg-light">
+    <div class="mb-2">
+      <input type="text" id="username" class="form-control" placeholder="Tên của bạn">
+    </div>
+    <div class="mb-2">
+      <textarea id="content" class="form-control" rows="3" placeholder="Nhập bình luận..."></textarea>
+    </div>
+    <button id="submitComment" class="btn btn-primary">Gửi bình luận</button>
+  </div>
+
+  <!-- Danh sách bình luận -->
+  <ul id="commentList" class="list-group">
+    <!-- Các bình luận sẽ được thêm vào đây bằng JavaScript -->
+  </ul>
+</div>
+
+  <!-- Modal Đăng nhập/Đăng ký -->
+<div class="modal fade" id="authModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="authTitle">Đăng nhập</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Form Đăng nhập -->
+        <div id="loginForm">
+          <input type="text" id="loginUsername" class="form-control mb-2" placeholder="Tên đăng nhập">
+          <input type="password" id="loginPassword" class="form-control mb-2" placeholder="Mật khẩu">
+          <button class="btn btn-success w-100 mb-2" onclick="handleLogin()">Đăng nhập</button>
+          <p class="text-center">Chưa có tài khoản? <a href="#" onclick="switchToRegister()">Đăng ký</a></p>
+        </div>
+        <!-- Form Đăng ký -->
+        <div id="registerForm" style="display: none;">
+          <input type="text" id="regUsername" class="form-control mb-2" placeholder="Tên đăng nhập">
+          <input type="password" id="regPassword" class="form-control mb-2" placeholder="Mật khẩu">
+          <input type="password" id="regConfirm" class="form-control mb-2" placeholder="Nhập lại mật khẩu">
+          <button class="btn btn-success w-100 mb-2" onclick="handleRegister()">Đăng ký</button>
+          <p class="text-center">Đã có tài khoản? <a href="#" onclick="switchToLogin()">Đăng nhập</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+   <!-- Modal thông tin tài khoản -->
+<div class="modal fade" id="profileModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Thông tin tài khoản</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Màn hình lựa chọn -->
+        <div id="profileOptions" class="text-center">
+          <div class="avatar-container mb-3">
+            <img id="userAvatar" src="../../images/LOGO.png" alt="Avatar" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+            <button id="editAvatarButton" class="btn btn-primary btn-sm edit-avatar-btn" onclick="document.getElementById('avatarUpload').click()">Sửa avatar</button>
+            <input type="file" id="avatarUpload" style="display: none;" accept="image/*" onchange="changeAvatar(this)">
+          </div>
+          <h4 id="profileUsername" class="mb-4">Tên người dùng</h4>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="card option-card" style="cursor: pointer;" onclick="showSection('infoSection')">
+                <div class="card-body">
+                  <i class="bi bi-person-circle fs-3 mb-2"></i>
+                  <h6>Cập nhật thông tin</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card option-card" style="cursor: pointer;" onclick="showSection('passwordSection')">
+                <div class="card-body">
+                  <i class="bi bi-lock-fill fs-3 mb-2"></i>
+                  <h6>Đổi mật khẩu</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card option-card" style="cursor: pointer;" onclick="showSection('savedStoriesSection')">
+                <div class="card-body">
+                  <i class="bi bi-bookmark-fill fs-3 mb-2"></i>
+                  <h6>Truyện đã lưu</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Phần Cập nhật thông tin -->
+        <div id="infoSection" style="display: none;">
+          <div class="d-flex align-items-center mb-3">
+            <button class="btn btn-outline-secondary me-2" onclick="showSection('profileOptions')"><i class="bi bi-arrow-left"></i> Quay lại</button>
+            <h5 class="mb-0">Cập nhật thông tin</h5>
+          </div>
+          <form id="updateInfoForm">
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Họ tên</label>
+              <input type="text" class="form-control" id="fullName" placeholder="Nhập họ tên">
+            </div>
+            <div class="mb-3">
+              <label for="phoneNumber" class="form-label">Số điện thoại</label>
+              <input type="tel" class="form-control" id="phoneNumber" placeholder="Nhập số điện thoại">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Nhập email">
+            </div>
+            <button type="button" class="btn btn-primary w-100" onclick="updateUserInfo()">Cập nhật thông tin</button>
+          </form>
+        </div>
+        <!-- Phần Đổi mật khẩu -->
+        <div id="passwordSection" style="display: none;">
+          <div class="d-flex align-items-center mb-3">
+            <button class="btn btn-outline-secondary me-2" onclick="showSection('profileOptions')"><i class="bi bi-arrow-left"></i> Quay lại</button>
+            <h5 class="mb-0">Đổi mật khẩu</h5>
+          </div>
+          <form id="changePasswordForm">
+            <div class="mb-3">
+              <label for="currentPassword" class="form-label">Mật khẩu hiện tại</label>
+              <input type="password" class="form-control" id="currentPassword">
+            </div>
+            <div class="mb-3">
+              <label for="newPassword" class="form-label">Mật khẩu mới</label>
+              <input type="password" class="form-control" id="newPassword">
+            </div>
+            <div class="mb-3">
+              <label for="confirmNewPassword" class="form-label">Xác nhận mật khẩu mới</label>
+              <input type="password" class="form-control" id="confirmNewPassword">
+            </div>
+            <button type="button" class="btn btn-primary w-100" onclick="changePassword()">Cập nhật mật khẩu</button>
+          </form>
+        </div>
+        <!-- Phần Truyện đã lưu -->
+        <div id="savedStoriesSection" style="display: none;">
+          <div class="d-flex align-items-center mb-3">
+            <button class="btn btn-outline-secondary me-2" onclick="showSection('profileOptions')"><i class="bi bi-arrow-left"></i> Quay lại</button>
+            <h5 class="mb-0">Truyện đã lưu</h5>
+          </div>
+          <div id="savedStoriesList" class="row">
+            <!-- Danh sách truyện sẽ được thêm bằng JavaScript -->
+          </div>
+          <p id="noSavedStories" class="text-center mt-3" style="display: none;">Bạn chưa lưu truyện nào.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" onclick="logout()">Đăng xuất</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="../../JS/audio-player.js"></script>
+
+  <script src="../../JS/cactrang.js"></script>
+</body>
+
+</html>

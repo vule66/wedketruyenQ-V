@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đọc Truyện - WebketruyenQ&V</title>
+  
+  <link rel="shortcut icon" href="../../images/LOGO.ico" type="image/x-icon">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../../CSS/trangchu.css">
+  <link rel="stylesheet" href="../../CSS/read.css">
+</head>
+
+<body>
+  <div class="main-content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand ms-3" href="../Trangchu.html">WebketruyenQ&V</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto ms-3">
+          <li class="nav-item">
+            <a class="nav-link" href="../Trangchu.html">Trang chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Truyện mới.html">Truyện Mới</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownTheLoai" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Thể Loại
+            </a>
+             <div class="dropdown-menu" aria-labelledby="dropdownTheLoai">
+              <a class="dropdown-item" href="../Truyện ma.html">Truyện Ma</a>
+              <a class="dropdown-item" href="../Truyện cổ tích.html">Cổ Tích</a>
+              <a class="dropdown-item" href="../Truyện cười.html">Truyện Cười</a>
+              <a class="dropdown-item" href="../Truyện ngôn tình.html">Truyện Ngôn Tình</a>
+              <a class="dropdown-item" href="../Truyện hoạt hình.html">Truyện Hoạt Hình</a>
+              <a class="dropdown-item" href="../Truyện ý nghĩa.html">Truyện Ý Nghĩa</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about.html">Giới thiệu</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center ms-auto me-3 gap-2">
+          <button class="circle-button" id="toggleDark">
+            <i class="bi bi-lightbulb"></i>
+          </button>
+          <!-- Nút đăng nhập hoặc tài khoản -->
+          <button id="authButton" class="btn btn-outline-light ms-2 rounded-pill me-3" data-bs-toggle="modal"
+            data-bs-target="#authModal">
+            Đăng nhập
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Nội dung trang đọc truyện -->
+    <div class="container mt-4">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb-container fade-in">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../Trangchu.html">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="javascript:history.back()">Bìm bìm quấn quýt</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Nội Dung Truyện</li>
+          </ol>
+        </nav>
+      </div>
+
+      <!-- Thanh điều khiển đọc truyện -->
+      <div class="reading-controls d-flex justify-content-between align-items-center">
+        <div class="font-size-control d-flex align-items-center">
+          <button class="btn btn-sm btn-outline-secondary rounded-circle" id="decreaseFont">
+            <i class="bi bi-dash"></i>
+          </button>
+          <span class="font-size-value mx-2" id="currentFontSize">18</span>
+          <button class="btn btn-sm btn-outline-secondary rounded-circle" id="increaseFont">
+            <i class="bi bi-plus"></i>
+          </button>
+        </div>
+        <div class="color-toggle">
+          <button class="btn btn-sm btn-outline-secondary" id="toggleMode">
+            <i class="bi bi-moon"></i> Chế độ đọc
+          </button>
+        </div>
+        <div class="bookmark">
+          
+          <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-volume-up"></i> Nghe</button>
+    
+        </div>
+      </div>
+
+      <!-- Tiêu đề chương -->
+      <div class="chapter-title-container text-center mb-4">
+        <h1 class="story-title">Bìm bìm quấn quýt</h1>
+        <div class="reading-time">Thời gian đọc: khoảng 20 phút</div>
+      </div>
+      <!-- Nội dung truyện -->
+      <div class="story-content fade-in" id="storyContent">
+        <!-- Nội dung truyện sẽ được thêm vào đây -->
+<p>- Chị Thúy chết rồi bà Tư ơi!</p>
+<p>Tiếng la thất thanh của thằng Tèo làm bà Tư giật mình như bị sét đánh ngang mày. Bà vừa lay ông Tư, vừa hỏi giật giọng:</p>
+<p>- Bây nói con Thúy nào vậy Tèo?</p>
+<p>- Thì chị Thúy con ông Tám bên xẻo, chứ còn ai nữa hở bà Tư?</p>
+<p>Câu nói của thằng Tèo khiến bà Tư bàng hoàng xúc động.</p>
+<p>- Con Thúy làm sao lại chết? Mới hôm qua tao thấy nó sờ sờ kia mà!</p>
+<p>Thằng Tèo đã đứng trong nhà từ lúc nào.</p>
+<p>- Người ta nói chị uống thuốc rầy tự tử. Mọi người vừa phát hiện đưa đi trạm xá, nhưng lại chở về rồi đó bà Tư.</p>
+<p>Ông Tư vớ lấy chiếc gậy bước vội ra ngoài, không kịp sửa lại chiếc áo bị gài nút bắt quàng.</p>
+<p>- Thật khổ cho con nhỏ! Tôi đã nói rồi mà anh Tám không chịu nghe. Tụi nhỏ thương nhau đâu có gì sai quấy mà cứ làm khó nó mãi. Sự việc ra như vầy có hối cũng chẳng kịp rồi đó bà nó...</p>
+<p>Bà Tư nhả vội mớ trầu trong miệng ra ô, nói với theo:</p>
+<p>- Ông qua bên ấy coi thể nào. Tôi gọi sắp nhỏ về coi nhà rồi qua theo. Thiệt là khổ thân con bé...</p>
+<p>***</p>
+<p>Bà Tư nói như vậy nhưng trong lòng đã run lên. Linh tính báo cho bà sẽ xảy ra việc không hay cho con Thúy. Tội nghiệp con nhỏ và thằng Quý, nó thương nhau. Phải cái việc môn đăng hộ đối mà hai nhà từ thân tình sinh ra tranh cãi. Chơi với nhau thì thuận thảo nhưng bàn đến hôn sự cho đôi trẻ lại bất đồng. Thế mới biết ở đời thật khó, thân tình là như thế, nhưng sui gia nhiều khi chưa đáng mặt...</p>
+<p>Ông Tám bên xẻo có cô con gái thứ tư tên Thúy, nết na cả xóm đều biết. Bên kia xẻo lại có ông Năm hay qua lại nên lâu ngày thành thâm tình. Hai ông bạn già thường gặp nhau, lúc chén trà khi ly rượu, lâu ngày như có tình máu mủ.</p>
+<p>Ông Năm có người trai lớn giỏi việc đồng áng, thường lặn lội ngoài đồng kiếm cá nắm cho bữa cơm bớt nhạt. Có khi được con cá to anh hay mang sang biếu nhà bác Tám, với cái nghĩa tôn trọng tình bạn của bậc trên...</p>
+<p>Lâu ngày qua lại, anh để ý cái duyên dáng của Tư Thúy nên đâm thương lúc nào không biết. Hai người hay hẹn gặp nhau ngoài đồng cùng đi chao bắt tép, hay kéo lưới với nhau. Trái gái lớn gần nhau lâu ngày thật khó rứt rời, tình cảm ngày một khăng khít như đôi vợ chồng đã đính ước. Trong làng nhìn họ trầm trồ với lời khen cân xứng, nghĩ rằng không nay thì mai sẽ có đám cưới rửa ruột một phen.</p>
+<p>Ai ngờ khi biết đôi trẻ phải lòng nhau, ông Năm thì tự tin cho rằng không có điều gì trắc trở. Nhưng ông Tám lại nghĩ khác, con gái của ông sao lại gả cho dân đồng nội. Có gả ông phải kiếm mối cho thật tốt, hay việt kiều xứ ngoại mới đáng mặt cô gái yêu vừa đẹp người lại nết na...</p>
+<p>Lúc đầu, ông Năm sang nài nỉ mãi nhà gái chẳng chịu chấp hôn. Sau biết chuyện, vợ chồng ông Tư góp tiếng cũng không xong. Sự việc kéo dài đã mấy năm mà không có hồi kết, khiến Tư Thúy và anh Quý lo đến tiều tụy cả người...</p>
+<p>Ông Tám ngoài miệng thì nói cứng, nhưng chờ mãi cũng không có mối nào tốt hơn, con gái thì ngày một lớn nên đâm ra nhượng bộ. Cả làng hay tin đều mừng vì cuối cùng mọi sự cũng suôn sẻ...</p>
+<p>Nhưng... ai ngờ đến giờ phút cuối ông Năm lại nổi tính tự ái. "Con trai không có mối này thì tìm mối khác. Ai hơi đâu bợ đỡ mấy kẻ nghèo mà lại làm cao..."</p>
+<p>Đến nước này vợ chồng ông Tư chỉ biết kêu trời! Chỉ tội nghiệp cho Tư Thúy cứ khóc sưng húp cả mắt mà không biết tựa vào ai...</p>
+<p>Cái chết của Tư Thúy khiến hai nhà càng thù ghét nhau. Ông Tám cho rằng con gái mình chết là do nhà trai gây ra. Nếu ông Năm không dở chứng thì sự việc có đâu như thế?</p>
+<p>Riêng ông Năm lại cho rằng, nhà gái bị quả báo khi làm mình làm mẩy, thách giá con gái quá cao. Nếu ngay từ đầu ưng thuận đâu ra chuyện thế này!...</p>
+<p>Đám ma Tư Thúy qua ngày thứ hai, cả làng lại một phen kinh hoảng. Anh Quý con ông Năm không chịu được sự kích động quá lớn cũng uống thuốc quyên sinh... Lúc này ông Năm hối hận thì đã muộn...</p>
+<p>Ngày đưa ma con gái, chiếc ghe lớn của ông Tám đi ngang qua nhà ông Năm trong tiếng đàn cò buồn thảm. Ông Tám với hai hàng nước mắt nhìn vào đám ma anh Quý nghiến răng: "Như thế mới vừa lòng người cha chỉ biết đầu không biết đuôi của mày đó Quý!"</p>
+<p>Sau sự kiện thương tâm, cây cầu bắc qua con lạch nối liền hai bờ bị dỡ bỏ. Hai nhà từ đó không ai qua lại, dù rằng một bước trên đất của nhau. Báo hại người trong làng muốn sang thăm hỏi cũng bất tiện, vì chẳng còn phương tiện như ngày nào. Nhiều người muốn bắc lại cây cầu nhưng lại sợ... thêm dầu vào lửa... nên bỏ qua luôn...</p>
+<p>Rồi trong làng có nhiều tiếng to nhỏ với nhau về tiếng khóc văng vẳng vào lúc tối trời. Không biết từ đâu tiếng khóc ấy cứ vang lên vào mỗi tối?</p>
+<p>Bọn trẻ con như thằng Tèo nghe thấy vậy ban đêm thường lủi mất chẳng thấy tăm hơi. Chúng sợ vì nghe người lớn nói với nhau: "Đó chính là oan hồn của Tư Thúy và anh Quý chết oan khuất nên khóc than thở về cuộc tình ngang trái..."</p>
+<p>Tiếng khóc bên bờ sông khiến cho ông Tư và bà Tư đâm ra khó ngủ. Nhà ông bà ở gần ông Tám nên tiếng khóc hằng đêm vang lên rất rõ. Lắm hôm bực mình hai vợ chồng già tìm gặp ông Tám hỏi cho rõ nguyên do. Dù sao hai đứa nhỏ cũng đã chết, khóc thương mãi cũng có ích gì...</p>
+<p>Nhưng kỳ lạ ở chỗ ông Tám cũng ngạc nhiên không kém. Có thể tiếng khóc ấy vang lên từ bên kia con xẻo, nơi có... nhà ông Năm...</p>
+<p>Vợ chồng ông Tư lại chèo chống sang nhà ông Năm. Nhưng ông Năm cũng chối bây bẩy, cho rằng tiếng khóc ấy từ nhà ông Tám vang đến...</p>
+<p>Ông Tư và bà Tư cùng nhìn nhau.</p>
+<p>"Như vậy đã rõ mười mươi là tiếng khóc của hai đứa nhỏ rồi!"</p>
+<p>Bà Tư run cả người khi nghe chồng nói. Bà rất thương Tư Thúy, nhưng... ma thì vẫn sợ...</p>
+<p>Mộ của Tư Thúy và anh Quý lúc đầu có nhiều người đề nghị chôn cạnh nhau. Nhưng cả hai nhà đều phản đối... Nên cuối cùng hai kẻ bạc mệnh đành chịu cảnh: "anh tả ngạn, em hữu ngạn". Hai ngôi mộ nằm cạnh chân đồng, cách gia đình khoảng hơn trăm mét, mặc dù không cùng bên nhưng lại đối diện nhau...</p>
+<p>Từ ngày xác định tiếng khóc là của đôi trai gái chết oan, ông Tư cứ đi ra đi vào ra chiều nghĩ ngợi. Ông biết tụi nó rất thương nhau, nhưng... cứ khóc kiểu này ai mà chịu được...!</p>
+<p>Có lần ông Tư đi tận đâu đâu rước về một ông thầy cúng tế, siêu độ cho hai vong hồn để người làng không phải nghe tiếng khóc nữa. Nhưng đến lúc yểm bùa trấn tà thì chỉ có một bên gia đình đồng ý. Nhà còn lại nhất quyết không theo, với lý do: "Không phải thân tộc sao lại cùng loài"...</p>
+<p>Tối đêm đó người ta lại nghe tiếng khóc vang lên từ một phía. Tiếng khóc nức nở, ai oán và thê lương, khiến lòng dạ cứ nao nao...</p>
+<p>Ông Tư lại chèo chống đi thuyết phục nhà còn lại. Nhưng đến lúc việc thành thì nhà kia lại giở chứng không theo...</p>
+<p>Rồi tiếng khóc lại vang lên trong tối ấy. Nó buồn thảm, ray rứt, ở bên đối diện, khiến ai cũng mủi lòng...</p>
+<p>Quá nản lòng, ông Tư bỏ mặc cho sự việc trôi theo dòng nước...</p>
+<p>Nhưng việc có thể bỏ được nhưng tiếng khóc thì không... Nó cứ ám ảnh giấc ngủ của hai vợ chồng già với niềm thương cảm hai đứa trẻ.</p>
+<p>Một đêm không ngủ được, ông Tư nói với vợ:</p>
+<p>- Có thể hai đứa nó không qua lại được với nhau nên cứ khóc mãi đó bà...</p>
+<p>Bà Tư trở mình thở dài:</p>
+<p>- Ông làm như chuyện tình Ngưu Lang, Chức Nữ không bằng. Đã là oan hồn thì sao không đến với nhau được. Lúc sống bị cản ngăn, chẳng lẽ lúc chết cũng không dám đến với nhau sao?</p>
+<p>- Bà nói như vậy sao được! Ông bà mình xưa nay làm gì phải đúng phép phải đạo. Cứ như bà nói thì tụi nhỏ đâu có chết, cứ dắt nhau đi cho khuất là xong...</p>
+<p>Chuyện lời qua tiếng lại của ông bà Tư đến tai người trong làng. Nhiều người góp ý, nhưng... luận bàn thì lắm mà cách giải quyết vẫn không ra...</p>
+<p>Một hôm, người hai bên con xẻo bỗng ngạc nhiên khi không nghe tiếng khóc lóc nữa. Thật lạ kỳ và huyền diệu thay cho giấc ngủ, mọi người đều thoải mái đi vào giấc điệp mà không mang theo cơn ác mộng nào...</p>
+<p>Sáng ngày, việc đầu tiên ông Tư làm là chống gậy đi xem ngôi mộ cạnh ruộng. Không biết ai cao tay, đã làm tiếng khóc ngừng hẳn mới tài?</p>
+<p>Khi ra tới hai ngôi mộ, ông già ngạc nhiên khi thấy một cây cầu bằng bập dừa (cuống lá dừa) bắc qua hai bờ lạch. Nó được gác tạm bợ lên những thanh trúc bắt chéo cánh sẻ làm nhịp, mấy dây lạt dừa giăng ngang như tay vịn để người đi qua có cái tựa vào. Thế mà cũng ra cây cầu, mặc dù có đôi chút sơ sài...</p>
+<p>Về đến nhà gặp vợ, ông Tư hí hửng:</p>
+<p>- Tôi nói như xâm bà! Không biết ai bắc một cây cầu bằng bập dừa nước qua hai ngôi mộ. Vì vậy tiếng khóc tụi nó mới yên đó bà.</p>
+<p>Bà Tư như không tin:</p>
+<p>- Ông nói thật hở ông?</p>
+<p>- Tôi dối bà làm gì! Từ đây tụi nhỏ mới thật sự an lòng ở bên nhau rồi. Sống phải có nhà, chết phải có đường. Tại lâu nay tôi ngu nên không nghĩ ra...</p>
+<p>Hai vợ chồng ông Tư vui nhưng thằng Tèo lại tỏ ra vui hơn ai hết. Nó hí hửng thầm thì với chúng bạn khiến ông Tư cũng tò mò muốn biết.</p>
+<p>- Có chuyện gì mà mày cứ hí ha hí hửng vậy Tèo? Nói cho ông nghe coi nào.</p>
+<p>Thằng nhỏ chưa nói, ông Tư đã kịp nghĩ ra.</p>
+<p>- Thì ra là con bắc cây cầu ấy phải không? Cái thằng cũng giỏi, nghĩ ra sớm hơn mọi người.</p>
+<p>Thằng Tèo nhe răng ra cười:</p>
+<p>- Giỏi chi ông Tư! Là ông gợi cho con nhớ chuyện Ngưu Lang Chức Nữ ấy mà.</p>
+<p>Ông Tư cảm thấy hài lòng với chính mình. "Thì ra người già như mình cũng chưa phải bỏ đi. Già không làm được, nhưng gợi ý cho bọn trẻ làm cũng tốt chứ sao!"</p>
+<p>Chuyện thằng Tèo bắc cầu cho hai oan hồn bạc phước đến với nhau, phút chốc lan khắp trong thôn. Nhiều người khen thằng nhỏ thông minh lanh lợi mới nghĩ ra một phương pháp vẹn toàn. Cái oai thằng Tèo trong chốc lát còn hơn cả cái tài của ông thầy mà ông Tư đi rước về dạo ấy...</p>
+<p>Ngày tháng trôi mau. Hai ngôi mộ theo thời gian đã xanh cỏ. Thỉnh thoảng ông Tám và ông Năm cũng ra thăm mộ con. Nhưng thường thì cứ người này ra, người kia lại rút ngay vào nhà. Họ kiêng kỵ nhau như kẻ thù giết chết con cái mình...</p>
+<p>Sự thù oán của hai nhà làm trong xóm ai cũng áy náy không yên. Dù sao mọi chuyện cũng đã lỡ, đâu ai muốn cớ sự như thế! Hai nhà từ trước đã thân nhau, chỉ không chịu cảm thông mới sinh ra nông nổi... Phải chi... Phải chi... Và chữ "phải chi" cứ xuất hiện trên môi mọi người từ cái ngày bi thảm ấy...</p>
+<p>Đã không nói "phải chi" thì thôi, một khi đã nói ra rất nhiều người rơi nước mắt. Nhiều người thường hay nói đến "Bài học ngàn vàng", với câu: Phàm muốn làm việc gì phải nghĩ đến hậu quả của nó... Nhưng mấy ai học chữ "phải chi"! Bài học thì hôm nay không học cũng còn dịp khác, còn chữ "phải chi" lúc nói ra mọi sự đã sinh rồi... Cũng như, đâu ai có thể làm cho hai người xấu số sống lại được!... Oán thù của hai nhà không ai chịu tháo bỏ thì biết đâu lại sinh ra việc khác. Rồi ai biết được lại hối tiếc chữ "phải chi"!...</p>
+<p>Bước vào tháng tám, trời mưa không dứt! Con lạch nhỏ có hai ngôi mộ ngầu đỏ nước triều cường. Gió mưa và nước triều dâng làm cây cầu của thằng Tèo bị trôi mất khiến ông Tư lo ngại. Cái lo của người già đôi khi rất vô cớ. Cứ cảm thì sinh lo, như chính chuyện nhà mình...</p>
+<p>Hai vợ chồng già bàn nhau tìm cách sửa lại cây cầu cho hai đứa cháu vốn rất được quý mến. Và họ nghĩ, "phải chi"... ai cũng thương chúng như mình...</p>
+<p>Hôm hai ông bà ra chỗ ngôi mộ mới biết đã có người làm thay cho họ. Không biết từ lúc nào phía bên kia có mấy nhịp cầu tre được dựng sẵn, nhưng chưa hoàn tất...</p>
+<p>Ông bà Tư nhớ ra, mấy hôm nay ông Năm thường hay chặt tre không biết để làm gì? Có thể cây cầu là do ông già cảm con mà dựng lên...</p>
+<p>Hôm sau, vợ chồng ông Tư ngạc nhiên khi thấy ông Tám vác tre ra ngôi mộ. Sai mấy đứa nhỏ theo xem mới biết là để làm cầu...</p>
+<p>Người bên đây làm nhịp. Kẻ bên kia thả đòn. Không ai nói với ai, nhưng lòng rất thư thái bởi việc công ích hiếm thấy...</p>
+<p>Ông Tư khi hiểu ra thở dài cảm thán... "Phải chi"...!?</p>
+<p>Cây cầu được hai nhà thù nghịch làm ra không bao lâu thì từ ngôi mộ mọc ra mấy dây bìm bìm thật tươi tốt. Từ bên đây và phía kia, chúng bò ra rất nhanh rồi bám vào thân cầu tìm đến với nhau. Những sợi bìm bìm to bằng ngón tay, cứ quấn quýt lấy nhau như thừng sợi săn chắc, không sao bứt được. Lá bìm bìm to tròn, đan xen vào nhau cùng rung rinh trong gió, mặc cho những ngày giông bão...</p>
+<p>Mấy đứa nhỏ trong thôn, trong đó có thằng Tèo, chiều chiều thường ra vui đùa bên cây cầu bắc qua con xẻo vắng. Bọn chúng vô tư chơi đùa, không phân biệt sang hèn, cùng vui với dây bìm bìm và xem nó như cây cầu tuột. Bên đây một đứa, bên kia một đứa, cùng thả người trên thân bìm bìm tuột xuống dòng nước tung tóe. Tiếng cười trong trẻo vang lên hồn nhiên chất phác. Không đứa nào trong bọn chúng để ý đến chuyện người bên đây con xẻo hay ở phía bên kia... Chung qui chúng được sinh ra từ những đôi trai gái mặn tình đầy may mắn...</p>
+<p>Có những chiều buông, ông Tư và bà Tư ra nhìn về phía lũ trẻ, cùng mỉm cười. Trong làn gió chiều vang lên lời nói bâng quơ:</p>
+<p>- Phải chi chúng nó lấy nhau, bây giờ đã có trẻ nhỏ cho bà bồng...</p>
+<p>Bà Tư quay đi, lau nhanh dòng lệ trên khóe mắt già nua...</p>
+<p>Nút thắt đã được lần mở. Cây cầu giờ đây nối liền hai bờ lạch bất chấp thời gian, bởi đã có mấy dây bìm bìm giữ chặt. Nếu mai kia thân tre có mục nát thì những dây bìm bìm bản thân đã thành cầu thay thế cho nó. Nhưng, vẫn còn một điều duy nhất mà hai nhà đều hối tiếc... Có một thứ mãi mãi họ không bao giờ nối lại được...</p>     </div>
+    </div>
+<div class="container comment-section mt-4">
+  <h4 class="mb-3">Bình luận</h4>
+
+  <!-- Form bình luận -->
+  <div id="commentForm" class="mb-4 p-3 rounded shadow-sm bg-light">
+    <div class="mb-2">
+      <input type="text" id="username" class="form-control" placeholder="Tên của bạn">
+    </div>
+    <div class="mb-2">
+      <textarea id="content" class="form-control" rows="3" placeholder="Nhập bình luận..."></textarea>
+    </div>
+    <button id="submitComment" class="btn btn-primary">Gửi bình luận</button>
+  </div>
+
+  <!-- Danh sách bình luận -->
+  <ul id="commentList" class="list-group">
+    <!-- Các bình luận sẽ được thêm vào đây bằng JavaScript -->
+  </ul>
+</div>
+
+  <!-- Modal Đăng nhập/Đăng ký -->
+<div class="modal fade" id="authModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="authTitle">Đăng nhập</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Form Đăng nhập -->
+        <div id="loginForm">
+          <input type="text" id="loginUsername" class="form-control mb-2" placeholder="Tên đăng nhập">
+          <input type="password" id="loginPassword" class="form-control mb-2" placeholder="Mật khẩu">
+          <button class="btn btn-success w-100 mb-2" onclick="handleLogin()">Đăng nhập</button>
+          <p class="text-center">Chưa có tài khoản? <a href="#" onclick="switchToRegister()">Đăng ký</a></p>
+        </div>
+        <!-- Form Đăng ký -->
+        <div id="registerForm" style="display: none;">
+          <input type="text" id="regUsername" class="form-control mb-2" placeholder="Tên đăng nhập">
+          <input type="password" id="regPassword" class="form-control mb-2" placeholder="Mật khẩu">
+          <input type="password" id="regConfirm" class="form-control mb-2" placeholder="Nhập lại mật khẩu">
+          <button class="btn btn-success w-100 mb-2" onclick="handleRegister()">Đăng ký</button>
+          <p class="text-center">Đã có tài khoản? <a href="#" onclick="switchToLogin()">Đăng nhập</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+   <!-- Modal thông tin tài khoản -->
+<div class="modal fade" id="profileModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Thông tin tài khoản</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Màn hình lựa chọn -->
+        <div id="profileOptions" class="text-center">
+          <div class="avatar-container mb-3">
+            <img id="userAvatar" src="../../images/LOGO.png" alt="Avatar" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+            <button id="editAvatarButton" class="btn btn-primary btn-sm edit-avatar-btn" onclick="document.getElementById('avatarUpload').click()">Sửa avatar</button>
+            <input type="file" id="avatarUpload" style="display: none;" accept="image/*" onchange="changeAvatar(this)">
+          </div>
+          <h4 id="profileUsername" class="mb-4">Tên người dùng</h4>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="card option-card" style="cursor: pointer;" onclick="showSection('infoSection')">
+                <div class="card-body">
+                  <i class="bi bi-person-circle fs-3 mb-2"></i>
+                  <h6>Cập nhật thông tin</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card option-card" style="cursor: pointer;" onclick="showSection('passwordSection')">
+                <div class="card-body">
+                  <i class="bi bi-lock-fill fs-3 mb-2"></i>
+                  <h6>Đổi mật khẩu</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card option-card" style="cursor: pointer;" onclick="showSection('savedStoriesSection')">
+                <div class="card-body">
+                  <i class="bi bi-bookmark-fill fs-3 mb-2"></i>
+                  <h6>Truyện đã lưu</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Phần Cập nhật thông tin -->
+        <div id="infoSection" style="display: none;">
+          <div class="d-flex align-items-center mb-3">
+            <button class="btn btn-outline-secondary me-2" onclick="showSection('profileOptions')"><i class="bi bi-arrow-left"></i> Quay lại</button>
+            <h5 class="mb-0">Cập nhật thông tin</h5>
+          </div>
+          <form id="updateInfoForm">
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Họ tên</label>
+              <input type="text" class="form-control" id="fullName" placeholder="Nhập họ tên">
+            </div>
+            <div class="mb-3">
+              <label for="phoneNumber" class="form-label">Số điện thoại</label>
+              <input type="tel" class="form-control" id="phoneNumber" placeholder="Nhập số điện thoại">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Nhập email">
+            </div>
+            <button type="button" class="btn btn-primary w-100" onclick="updateUserInfo()">Cập nhật thông tin</button>
+          </form>
+        </div>
+        <!-- Phần Đổi mật khẩu -->
+        <div id="passwordSection" style="display: none;">
+          <div class="d-flex align-items-center mb-3">
+            <button class="btn btn-outline-secondary me-2" onclick="showSection('profileOptions')"><i class="bi bi-arrow-left"></i> Quay lại</button>
+            <h5 class="mb-0">Đổi mật khẩu</h5>
+          </div>
+          <form id="changePasswordForm">
+            <div class="mb-3">
+              <label for="currentPassword" class="form-label">Mật khẩu hiện tại</label>
+              <input type="password" class="form-control" id="currentPassword">
+            </div>
+            <div class="mb-3">
+              <label for="newPassword" class="form-label">Mật khẩu mới</label>
+              <input type="password" class="form-control" id="newPassword">
+            </div>
+            <div class="mb-3">
+              <label for="confirmNewPassword" class="form-label">Xác nhận mật khẩu mới</label>
+              <input type="password" class="form-control" id="confirmNewPassword">
+            </div>
+            <button type="button" class="btn btn-primary w-100" onclick="changePassword()">Cập nhật mật khẩu</button>
+          </form>
+        </div>
+        <!-- Phần Truyện đã lưu -->
+        <div id="savedStoriesSection" style="display: none;">
+          <div class="d-flex align-items-center mb-3">
+            <button class="btn btn-outline-secondary me-2" onclick="showSection('profileOptions')"><i class="bi bi-arrow-left"></i> Quay lại</button>
+            <h5 class="mb-0">Truyện đã lưu</h5>
+          </div>
+          <div id="savedStoriesList" class="row">
+            <!-- Danh sách truyện sẽ được thêm bằng JavaScript -->
+          </div>
+          <p id="noSavedStories" class="text-center mt-3" style="display: none;">Bạn chưa lưu truyện nào.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" onclick="logout()">Đăng xuất</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="../../JS/audio-player.js"></script>
+
+  <script src="../../JS/cactrang.js"></script>
+</body>
+
+</html>

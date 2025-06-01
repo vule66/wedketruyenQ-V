@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đọc Truyện - WebketruyenQ&V</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../../CSS/trangchu.css">
+  <link rel="stylesheet" href="../../CSS/read.css">
+</head>
+
+<body>
+  <div class="main-content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand ms-3" href="../Trangchu.html">WebketruyenQ&V</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto ms-3">
+          <li class="nav-item">
+            <a class="nav-link" href="../Trangchu.html">Trang chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Truyện mới.html">Truyện Mới</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownTheLoai" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Thể Loại
+            </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownTheLoai">
+              <a class="dropdown-item" href="../Truyện ma.html">Truyện Ma</a>
+              <a class="dropdown-item" href="../Truyện cổ tích.html">Cổ Tích</a>
+              <a class="dropdown-item" href="../Truyện cười.html">Truyện Cười</a>
+              <a class="dropdown-item" href="../Truyện ngôn tình.html">Truyện Ngôn Tình</a>
+              <a class="dropdown-item" href="../Truyện ý nghĩa.html">Truyện Ý Nghĩa</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about.html">Giới thiệu</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center ms-auto me-3 gap-2">
+          <button class="circle-button" id="toggleDark">
+            <i class="bi bi-lightbulb"></i>
+          </button>
+          <!-- Nút đăng nhập hoặc tài khoản -->
+          <button id="authButton" class="btn btn-outline-light ms-2 rounded-pill me-3" data-bs-toggle="modal"
+            data-bs-target="#authModal">
+            Đăng nhập
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Nội dung trang đọc truyện -->
+    <div class="container mt-4">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb-container fade-in">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../Trangchu.html">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="javascript:history.back()">Lời Nguyện Cầu Của Cô Ấy</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Nội Dung Truyện</li>
+          </ol>
+        </nav>
+      </div>
+
+      <!-- Thanh điều khiển đọc truyện -->
+      <div class="reading-controls d-flex justify-content-between align-items-center">
+        <div class="font-size-control d-flex align-items-center">
+          <button class="btn btn-sm btn-outline-secondary rounded-circle" id="decreaseFont">
+            <i class="bi bi-dash"></i>
+          </button>
+          <span class="font-size-value mx-2" id="currentFontSize">18</span>
+          <button class="btn btn-sm btn-outline-secondary rounded-circle" id="increaseFont">
+            <i class="bi bi-plus"></i>
+          </button>
+        </div>
+        <div class="color-toggle">
+          <button class="btn btn-sm btn-outline-secondary" id="toggleMode">
+            <i class="bi bi-moon"></i> Chế độ đọc
+          </button>
+        </div>
+        <div class="bookmark">
+          
+          <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-volume-up"></i> Nghe</button>
+    
+        </div>
+      </div>
+
+      <!-- Tiêu đề chương -->
+      <div class="chapter-title-container text-center mb-4">
+        <h1 class="story-title">Lời Nguyện Cầu Của Cô Ấy (Chương I)</h1>
+        <div class="reading-time">Thời gian đọc: khoảng 8 phút</div>
+      </div>
+      <!-- Nội dung truyện -->
+      <div class="story-content fade-in" id="storyContent">
+        <!-- Nội dung truyện sẽ được thêm vào đây -->
+
+<p>Tôi xuyên sách, xuyên vào cuốn tiểu thuyết thiên kim thật giả và trở thành thiên kim thật bị ngàn người khinh thường. Bởi vì cô ấy từ nhỏ đã lớn lên ở nông thôn, bị cha mẹ nuôi ngược đãi, bỏ học từ sớm, là một người thô thiển mù chữ.</p>
+
+<p>Nhưng ba mẹ và anh trai ruột của tôi, chẳng những không đau lòng cho tôi, ngược lại càng thêm ghét bỏ tôi.</p>
+
+<p>Bọn họ chán ghét việc tôi trở về cướp đi vị trí của thiên kim giả, lại thêm lo lắng khi thiên kim giả phải trở về sống cực khổ với cặp ba mẹ nghèo khó kia.</p>
+
+<p>Nhưng thiên kim giả lại không nghĩ như vậy, cô ta đối với sự trở về của tôi có vẻ không có cảm giác an toàn, chẳng những dụ dỗ anh trai của tôi, quyến rũ ba tôi, còn tính kế cùng với vị hôn phu trúc mã khiến tôi chết trong một vụ tai nạn giao thông.</p>
+
+<p>Tôi biết rõ nội dung tiểu thuyết, nhưng tôi không hề nao núng, tôi chỉ muốn xem gia đình nào lại có thể nuôi dưỡng ra một kẻ tam quan bất chính như vậy.</p>
+
+<p>Vì thế khi bước vào cửa lớn Bùi gia, nhìn thấy một cô gái đang khóc lóc ở trong lòng phu nhân xinh đẹp, trong lòng không khỏi than thở:</p>
+
+<p>【 Chậc chậc chậc, đây là nữ chính à, bộ dáng lê hoa đái vũ của nữ chính thật làm tôi đau lòng, khó trách anh trai đầu gỗ của tôi không kiềm chế được. 】</p>
+
+<p>【 Thì ra bọn họ đều thích kiểu khóc tang như này sao, mình quả thật là học không được, học không được mà. 】</p>
+
+<p>Bùi Trạc đang dẫn đường thì bị trượt chân, thiếu chút nữa ngã sấp mặt, anh ta có chút hoảng sợ nhìn tôi.</p>
+
+<p>Tôi lại không kiên nhẫn bĩu môi: "Nhìn gì? Đúng là đồ sứ, tôi cũng không đụng vào anh.”</p>
+
+<p>Dứt lời tôi đẩy anh ta ra, trực tiếp ngồi xuống trước mặt bọn họ, thiên kim giả Bùi Nguyệt còn đang nức nở, cô ta len lén liếc tôi một cái, rồi nhanh chóng quay lại.</p>
+
+<p>“Tương Tương, đây là chị gái Bùi Nguyệt của con, về sau con bé sẽ sống cùng chúng ta."</p>
+
+<p>Phu nhân xinh đẹp vỗ vỗ bả vai Bùi Nguyệt, khách khí lại xa cách giải thích với tôi.</p>
+
+<p>【 Tôi đương nhiên biết, tôi còn biết sau này cô ta sẽ ngủ với chồng dì nữa đó, ngược đãi con trai dì còn đánh con gái dì. 】</p>
+
+<p>Tay Bùi phu nhân dừng lại, Bùi Nguyệt cũng ngưng khóc. Tôi lại cảm thấy có chút kỳ quái, biểu cảm trên mặt hai người họ thật đúng là phức tạp.</p>
+
+<p>“Con biết rồi, chị ơi, về sau chúng ta hãy sống chung thật tốt nha, em tuyệt không ghi hận chị vì đã chiếm thân phận của em đâu."</p>
+
+<p>Tôi nở nụ cười dịu dàng vươn tay về phía cô ta, Bùi Nguyệt nhìn Bùi phu nhân, nhưng không biết vì sao tinh thần Bùi phu nhân nhìn qua có chút không tốt.</p>
+
+<p>"Em gái..." Bùi Nguyệt không có cách nào khác, chỉ có thể cắn môi nắm lại tay của tôi, tôi lại nhân cơ hội sờ soạng một chút, Bùi Nguyệt sợ tới mức lập tức rụt trở về.</p>
+
+<p>Tôi vẫn chưa ngưng suy nghĩ:</p>
+
+<p>【 Mềm mại, yếu đuối như vậy, khó trách mấy người này đều tranh nhau làm vua cắm sừng, cũng không biết sao cô ta lại chịu hạ mình thân mật với lão già kia. 】</p>
+
+<p>Bùi Nguyệt mặt như ăn phải phân, sắc mặt Bùi phu nhân cũng âm trầm, tôi không muốn quấy rầy hai mẹ con này nên vỗ mông đi thẳng vào phòng mình.</p>
+
+<p>Mãi cho đến bữa tối, người cha rẻ mạt của tôi mới trở về, trên bàn cơm, Bùi Nguyệt vẫn bận rộn thể hiện lòng hiếu thảo như thường lệ, gắp đồ ăn cho ba Bùi.</p>
+
+<p>Lúc không khí vui vẻ hòa thuận, tôi nhịn không được ăn dưa:</p>
+
+<p>【 Thì ra mặt người dạ thú là như vậy à, ngoại trừ hơi lớn tuổi một chút thì ánh mắt Bùi Nguyệt quả thật không tệ. 】</p>
+
+<p>Xoẹt, là tiếng đồ ăn rơi trên bàn.</p>
+
+<p>Sự im lặng kéo dài một lúc, Bùi Nguyệt đỏ mặt cực độ, cô ta tưởng vì mình làm rơi đồ ăn trên bàn nên khiến mọi người không vui, liên tục xin lỗi, nói xong lại khóc.</p>
+
+<p>Bùi phu nhân nhíu mày, ba Bùi còn đang khiếp sợ chưa hoàn hồn lại.</p>
+
+<p>【 Nước mắt quả nhiên là vũ khí sắc bén của phụ nữ, nói khóc là khóc được ngay, thật sự là đỉnh cao, giống như khi cô ta và Bùi Minh say rượu làm loạn, chỉ khóc lóc mấy cái liền cho qua chuyện. 】</p>
+
+<p>Bùi Minh chính là tên của ba Bùi.</p>
+
+<p>【 Người chồng tốt cả đời, kết quả lại thua ở trên người con gái nuôi, còn vô cùng đồng cảm với cô ta, chậc chậc chậc, đúng là đàn ông... 】</p>
+
+<p>Bùi Nguyệt càng khóc càng lớn, ba Bùi cũng run tay như không có việc gì xảy ra.</p>
+
+<p>【 Ôi, thật sự là...... 】</p>
+
+<p>“Đủ rồi!! Khóc sướt mướt làm gì, tôi còn chưa có chết đâu!” Bùi phu nhân vỗ bàn quát lớn, Bùi Nguyệt sợ tới mức co rúm người, tôi cũng giật nảy mình.</p>
+
+<p>Tôi phải mất một lúc mới nhớ ra mình vừa nghĩ gì: 【 Ôi, tôi thực sự chán xem cái này rồi. 】</p>
+
+<p>Sáng sớm hôm sau tôi với tinh thần sảng khoái rời giường xuống lầu, nhưng Bùi gia một người cũng không ở đây.</p>
+
+<p>Tôi mừng rỡ vì được thanh tĩnh, nhàn nhã ăn điểm tâm, lại nghe được tiếng xì xào bàn tán trong bếp truyền đến.</p>
+
+<p>“Sắc mặt Nguyệt Nguyệt tiểu thư cũng không tốt lắm, sáng sớm hốc mắt đã hồng hồng đi ra ngoài.”</p>
+
+<p>“Còn không phải người mới tới gây náo loạn à.”</p>
+
+<p>“Đúng vậy, Nguyệt Nguyệt tiểu thư luôn thiện lương nhu thuận, tôi thấy người mới tới rất lợi hại đó, về sau chắc sẽ gây ra nhiều chuyện lắm đây..”</p>
+
+<p>“Không thể nào, tôi thấy ông bà chủ hẳn là sẽ hướng về Nguyệt Nguyệt tiểu thư, lúc này người kia mới tới ngày đầu tiên, thì sáng sớm mọi người đã ra ngoài, không giống như là được coi trọng”</p>
+
+<p>Tôi vừa nghe vừa gật đầu, nói cũng thật chuẩn, không phải đúng là như vậy sao?</p>
+
+<p>Trong sách, mặc dù ngày hôm sau người nhà Bùi gia đã không thấy bóng dáng, nhưng họ cũng làm ngơ đối với sự tồn tại của tôi, xem tôi như không khí.</p>
+
+<p>Bọn họ càng thêm yêu thương thiên kim giả lớn lên dưới gối kia, sợ cô ta suy nghĩ nhiều, một chút ôn nhu cũng keo kiệt không muốn cho "tôi".</p>
+
+<p>Trong mắt bọn họ, "tôi" trở lại Bùi gia, hưởng thụ cẩm y ngọc thực chưa từng thấy qua, đã là một loại ban ân.</p>
+
+<p>Tình cảm không cách nào cho được, vậy nên sẽ bù đắp bằng vô số vật chất, đây cũng là nguyên nhân Bùi Nguyệt vì sao lại cảm thấy tôi gây uy hiếp đến cô ta.</p>
+
+<p>Dù sao tình cảm cũng là thứ hư vô mờ mịt, nhưng vật chất trong tay thì là thật.</p>
+
+<p>“Nói tiếp đi, dù sao hai người cũng không được trả tiền lương nữa.”</p>
+
+<p>Tôi đột nhiên xuất hiện, tựa vào khung cửa phòng bếp, dọa mấy người kia nhảy dựng.</p>
+
+<p>“Nhị tiểu thư.”</p>
+
+<p>Ở sau lưng nói xấu chủ nhà, còn bị chính chủ nghe thấy, dù ở đâu cũng là điều tối kỵ.</p>
+
+<p>Mọi người ở đây thần sắc kích động, tôi lại giống như là không hiểu bất an trong lòng bọn họ, cười híp mắt nói: "Tính tình tôi không tốt lắm, cũng không được yêu thương bằng Nguyệt Nguyệt tiểu thư của các người. Nhưng để xử lý mấy kẻ thích ăn nói lung tung, thì vẫn có thể nha.”</p>
+
+<p>“Nhị tiểu thư, chúng tôi sai rồi, về sau không dám nữa đâu."</p>
+
+<p>Bùi gia cho đãi ngộ rất phong phú, hơn nữa chủ nhà đối nhân xử thế ôn hòa, bọn họ tuyệt không muốn mất đi công việc này.</p>
+
+<p>Huống chi, tin tức trong giới hào môn đều có liên hệ với nhau, nếu phạm sai lầm bị đuổi ra ngoài, người khác cũng không dám dùng lại bọn họ.</p>
+
+<p>Tôi hai tay ôm ngực, lạnh lùng nhìn thái độ của bọn họ biến chuyển, không nói lời nào.</p>
+
+<p>"Em gái, em hãy tha cho bọn họ đi, tất cả mọi người sống cũng không dễ dàng gì, nếu như bọn họ mạo phạm em, chị có thể thay họ xin lỗi em."</p>
+
+<p>Phía sau truyền đến một giọng nói mềm mại, ngọt ngào. Tôi quay đầu nhìn lại, thì ra là Bùi Nguyệt, không biết cô ta đã trở lại từ lúc nào.</p>
+
+<p>Mà giờ phút này, cô ta đang nhẹ nhàng nhíu mày, trong mắt là vẻ không đành lòng, vừa hay ứng với lời bọn họ nói Bùi Nguyệt ôn nhu thiện lương, mà tôi lại là kẻ xấu tính, tâm tình bất định.</p>
+
+<p>"Chị gái xin lỗi em ư, điều này sao có thể..."</p>
+
+<p>Tôi cười khẽ mở miệng nói, Bùi Nguyệt chẳng qua là vì muốn lôi kéo lòng người mà thôi, cô ta mới không xin lỗi tôi đâu.</p>
+
+<p>Đương nhiên, cô ta cũng nghĩ tới, tôi sẽ không ép cô ta xin lỗi, cô ta cho rằng tôi muốn theo bậc thang đi xuống, đang muốn mở miệng bộc lộ tình cảm chị em sâu đậm, tôi lại từ từ bổ sung những lời chưa nói xong:</p>
+
+<p>"Điều này sao có thể không chấp nhận chứ, chị, chúng ta đi thôi, em muốn nghe chị một mình xin lỗi em.”</p>
+
+<p>Biểu cảm trên mặt Bùi Nguyệt cứng ngắc.</p>
+
+<p>Tôi tiến lên giữ chặt tay Bùi Nguyệt, lại phát hiện một khoảng lạnh lẽo, mấy người kia ước gì chúng tôi nhanh chóng rời đi không truy cứu nữa, đương nhiên sẽ không nói gì.</p>
+
+<p>Bùi Nguyệt rất cảnh giác đối với sự tấn công trực tiếp của tôi, cô ta kinh ngạc, theo bản năng muốn rút tay ra nhưng lại bị tôi giữ chặt.</p>
+
+<p>“Chị ơi, tay của chị lạnh thật đó, để em sưởi ấm cho chị.”</p>
+
+<p>Tôi kéo Bùi Nguyệt đi ra, vừa hay đụng phải Bùi Trạc mới về nhà.</p>
+
+<p>Anh ta thấy chúng tôi bước chân chợt dừng lại, có chút chột dạ lùi về phía sau hai bước.</p>
+
+      </div>
+  </div>
+      </div>
+    </div>
+<div class="container comment-section mt-4">
+  <h4 class="mb-3">Bình luận</h4>
+
+  <!-- Form bình luận -->
+  <div id="commentForm" class="mb-4 p-3 rounded shadow-sm bg-light">
+    <div class="mb-2">
+      <input type="text" id="username" class="form-control" placeholder="Tên của bạn">
+    </div>
+    <div class="mb-2">
+      <textarea id="content" class="form-control" rows="3" placeholder="Nhập bình luận..."></textarea>
+    </div>
+    <button id="submitComment" class="btn btn-primary">Gửi bình luận</button>
+  </div>
+
+  <!-- Danh sách bình luận -->
+  <ul id="commentList" class="list-group">
+    <!-- Các bình luận sẽ được thêm vào đây bằng JavaScript -->
+  </ul>
+</div>
+
+  <!-- Modal Đăng nhập/Đăng ký -->
+<div class="modal fade" id="authModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="authTitle">Đăng nhập</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Form Đăng nhập -->
+        <div id="loginForm">
+          <input type="text" id="loginUsername" class="form-control mb-2" placeholder="Tên đăng nhập">
+          <input type="password" id="loginPassword" class="form-control mb-2" placeholder="Mật khẩu">
+          <button class="btn btn-success w-100 mb-2" onclick="handleLogin()">Đăng nhập</button>
+          <p class="text-center">Chưa có tài khoản? <a href="#" onclick="switchToRegister()">Đăng ký</a></p>
+        </div>
+        <!-- Form Đăng ký -->
+        <div id="registerForm" style="display: none;">
+          <input type="text" id="regUsername" class="form-control mb-2" placeholder="Tên đăng nhập">
+          <input type="password" id="regPassword" class="form-control mb-2" placeholder="Mật khẩu">
+          <input type="password" id="regConfirm" class="form-control mb-2" placeholder="Nhập lại mật khẩu">
+          <button class="btn btn-success w-100 mb-2" onclick="handleRegister()">Đăng ký</button>
+          <p class="text-center">Đã có tài khoản? <a href="#" onclick="switchToLogin()">Đăng nhập</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+   <!-- Modal thông tin tài khoản -->
+<div class="modal fade" id="profileModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Thông tin tài khoản</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Màn hình lựa chọn -->
+        <div id="profileOptions" class="text-center">
+          <div class="avatar-container mb-3">
+            <img id="userAvatar" src="../../images/LOGO.png" alt="Avatar" class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+            <button id="editAvatarButton" class="btn btn-primary btn-sm edit-avatar-btn" onclick="document.getElementById('avatarUpload').click()">Sửa avatar</button>
+            <input type="file" id="avatarUpload" style="display: none;" accept="image/*" onchange="changeAvatar(this)">
+          </div>
+          <h4 id="profileUsername" class="mb-4">Tên người dùng</h4>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="card option-card" style="cursor: pointer;" onclick="showSection('infoSection')">
+                <div class="card-body">
+                  <i class="bi bi-person-circle fs-3 mb-2"></i>
+                  <h6>Cập nhật thông tin</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card option-card" style="cursor: pointer;" onclick="showSection('passwordSection')">
+                <div class="card-body">
+                  <i class="bi bi-lock-fill fs-3 mb-2"></i>
+                  <h6>Đổi mật khẩu</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card option-card" style="cursor: pointer;" onclick="showSection('savedStoriesSection')">
+                <div class="card-body">
+                  <i class="bi bi-bookmark-fill fs-3 mb-2"></i>
+                  <h6>Truyện đã lưu</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Phần Cập nhật thông tin -->
+        <div id="infoSection" style="display: none;">
+          <div class="d-flex align-items-center mb-3">
+            <button class="btn btn-outline-secondary me-2" onclick="showSection('profileOptions')"><i class="bi bi-arrow-left"></i> Quay lại</button>
+            <h5 class="mb-0">Cập nhật thông tin</h5>
+          </div>
+          <form id="updateInfoForm">
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Họ tên</label>
+              <input type="text" class="form-control" id="fullName" placeholder="Nhập họ tên">
+            </div>
+            <div class="mb-3">
+              <label for="phoneNumber" class="form-label">Số điện thoại</label>
+              <input type="tel" class="form-control" id="phoneNumber" placeholder="Nhập số điện thoại">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Nhập email">
+            </div>
+            <button type="button" class="btn btn-primary w-100" onclick="updateUserInfo()">Cập nhật thông tin</button>
+          </form>
+        </div>
+        <!-- Phần Đổi mật khẩu -->
+        <div id="passwordSection" style="display: none;">
+          <div class="d-flex align-items-center mb-3">
+            <button class="btn btn-outline-secondary me-2" onclick="showSection('profileOptions')"><i class="bi bi-arrow-left"></i> Quay lại</button>
+            <h5 class="mb-0">Đổi mật khẩu</h5>
+          </div>
+          <form id="changePasswordForm">
+            <div class="mb-3">
+              <label for="currentPassword" class="form-label">Mật khẩu hiện tại</label>
+              <input type="password" class="form-control" id="currentPassword">
+            </div>
+            <div class="mb-3">
+              <label for="newPassword" class="form-label">Mật khẩu mới</label>
+              <input type="password" class="form-control" id="newPassword">
+            </div>
+            <div class="mb-3">
+              <label for="confirmNewPassword" class="form-label">Xác nhận mật khẩu mới</label>
+              <input type="password" class="form-control" id="confirmNewPassword">
+            </div>
+            <button type="button" class="btn btn-primary w-100" onclick="changePassword()">Cập nhật mật khẩu</button>
+          </form>
+        </div>
+        <!-- Phần Truyện đã lưu -->
+        <div id="savedStoriesSection" style="display: none;">
+          <div class="d-flex align-items-center mb-3">
+            <button class="btn btn-outline-secondary me-2" onclick="showSection('profileOptions')"><i class="bi bi-arrow-left"></i> Quay lại</button>
+            <h5 class="mb-0">Truyện đã lưu</h5>
+          </div>
+          <div id="savedStoriesList" class="row">
+            <!-- Danh sách truyện sẽ được thêm bằng JavaScript -->
+          </div>
+          <p id="noSavedStories" class="text-center mt-3" style="display: none;">Bạn chưa lưu truyện nào.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" onclick="logout()">Đăng xuất</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="../../JS/audio-player.js"></script>
+
+  <script src="../../JS/cactrang.js"></script>
+</body>
+
+</html>
